@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Local Storage</title>
+    <style>
+        #sticky {
+            background-color: #fbf4ac;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <script>
+        window.addEventListener("load", function () {
+            var note = document.getElementById("sticky");
+
+            if (localStorage.getItem("content")) {
+                note.innerHTML = localStorage.getItem("content");
+            }
+            else {
+                note.innerHTML = "Schreib auf mich!";
+            }
+
+            note.addEventListener("blur", function () {
+                if (this.textContent === "") {
+                    localStorage.removeItem("content");
+                }
+                else {
+                    localStorage.setItem("content", this.innerHTML);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<section id="sticky" contenteditable="true" tabindex="100"></section>
+</body>
+</html>

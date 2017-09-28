@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Objekte &ndash; Rectangle</title>
+</head>
+<body>
+<script>
+    function Rectangle(w, h) {
+        this.width = w;
+        this.height = h;
+        this.setSize = Rectangle_setSize;
+        this.calcArea = Rectangle_calcArea;
+    }
+
+    function Rectangle_setSize(w, h) {
+        this.width = w;
+        this.height = h;
+    }
+
+    function Rectangle_calcArea() {
+        return this.width * this.height;
+    }
+
+    var rect = new Rectangle(10, 7);
+    rect.width = 5;
+    document.writeln(rect.calcArea()); // 35
+    rect.setSize(3, 5);
+    document.writeln(rect.calcArea()); // 15
+</script>
+</body>
+</html>

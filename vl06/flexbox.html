@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Flexible Box Layout</title>
+    <style>
+        body {
+            background: gray;
+            font: 24px Georgia, "Times New Roman", serif;
+        }
+
+        main {
+            min-height: 400px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: row;
+        }
+
+        main > article {
+            margin: 4px;
+            padding: 5px;
+            background: lightcoral;
+            flex: 3 1 60%;
+            order: 2;
+        }
+
+        main > nav {
+            margin: 4px;
+            padding: 5px;
+            background: lightblue;
+            flex: 1 6 20%;
+            order: 1;
+        }
+
+        main > aside {
+            margin: 4px;
+            padding: 5px;
+            background: lightblue;
+            flex: 1 6 20%;
+            order: 3;
+        }
+
+        header, footer {
+            margin: 4px;
+            padding: 5px;
+            min-height: 100px;
+            background: lightgreen;
+        }
+
+        /* Wenn schmäler als 640px -> untereinander */
+        @media all and (max-width: 640px) {
+            main {
+                flex-flow: column;
+                flex-direction: column;
+            }
+
+            main > article, main > nav, main > aside {
+                /* Natürliche Ordnung der Elemente wiederherstellen */
+                order: 0;
+            }
+
+            main > article, main > nav, main > aside, header, footer {
+                min-height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>Die Überschrift</header>
+<main>
+    <article>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </article>
+    <nav>
+        <ul>
+            <li>Seite 1</li>
+            <li>Seite 2</li>
+        </ul>
+    </nav>
+    <aside>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua.
+    </aside>
+</main>
+<footer>&copy; 2016 &ndash; HM1-Vorlesung</footer>
+</body>
+</html>

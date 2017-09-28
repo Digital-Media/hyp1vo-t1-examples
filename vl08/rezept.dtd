@@ -1,0 +1,16 @@
+<!ELEMENT rezept (gericht, zutaten, zubereitung)>
+<!ATTLIST rezept quelle CDATA #REQUIRED>
+
+<!ELEMENT gericht (#PCDATA)>
+
+<!ELEMENT zutaten (zutat)+>
+
+<!ELEMENT zubereitung (schritt)+>
+
+<!ELEMENT zutat (ingredienz, menge, einheit)>
+
+<!ELEMENT schritt (#PCDATA)>
+
+<!ELEMENT ingredienz (#PCDATA)>
+<!ELEMENT menge (#PCDATA)>
+<!ELEMENT einheit (#PCDATA)>

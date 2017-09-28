@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Scope &ndash; Mit var kein Block Scope, dafür Function Scope</title>
+</head>
+<body>
+<script>
+    var scope = "global";
+    function f() {
+        var enterBlock = true;
+        document.writeln(scope); // undefined
+        if (enterBlock) {
+            var scope = "local";
+        }
+        document.writeln(scope); // local
+    }
+    f();
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Canvas Bilder</title>
+    <meta charset="utf-8">
+    <style>
+        canvas {
+            background-color: darkgray;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            var canvas = document.getElementById("draw");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById("image");
+            ctx.drawImage(img, 20, 20);
+            var jsImg = new Image();
+            jsImg.src = "html5logo.png";
+            jsImg.addEventListener("load", function () {
+                ctx.drawImage(jsImg, 0, 24, 92, 104, 150, 60, 46, 52);
+            });
+        });
+    </script>
+</head>
+<body>
+<img src="html5logo.png" alt="HTML5 Logo" id="image">
+<canvas width="640" height="480" id="draw">Ihr Browser unterstützt Canvas leider nicht!</canvas>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Event-Handler &ndash; Standardverhalten unterbinden</title>
+    <script>
+        function showURL(event) {
+            var link = document.getElementsByTagName("a")[0];
+            alert(link.href);
+            event.preventDefault();
+        }
+    </script>
+</head>
+<body>
+<a href="https://www.fh-ooe.at/">Ein Link</a>
+<script>
+    var link = document.getElementsByTagName("a")[0];
+    link.addEventListener("click", showURL);
+</script>
+</body>
+</html>

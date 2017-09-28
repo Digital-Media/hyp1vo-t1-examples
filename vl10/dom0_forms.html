@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>DOM0 &ndash; Formulare</title>
+</head>
+<body>
+<form name="formular" action="mailto:john@johndoe.com" method="post">
+    <input type="text" name="vorname" value="John">
+    <input type="text" name="nachname" value="Doe">
+    <input type="email" name="contact" value="test@me.com">
+    <input type="submit" value="Abschicken">
+</form>
+<script>
+    var vorname = document.forms.formular.vorname.value;
+    var nachname = document.forms.formular.elements["nachname"].value;
+    var email = document.forms["formular"].elements["contact"].value;
+    document.write("<p>Ausgabe: " + vorname + " " + nachname + ": " + email + "</p>");
+</script>
+</body>
+</html>

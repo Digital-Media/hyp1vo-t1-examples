@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Scope &ndash; Block Scope mit let</title>
+</head>
+<body>
+<script>
+    let scope = "global";
+    function f() {
+        let enterBlock = true;
+        document.writeln(scope); // global
+        if (enterBlock) {
+            let scope = "local";
+            document.writeln(scope); // local
+        }
+        document.writeln(scope); // global
+    }
+    f();
+</script>
+</body>
+</html>

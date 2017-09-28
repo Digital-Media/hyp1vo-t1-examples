@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Canvas Text</title>
+    <meta charset="utf-8">
+    <script>
+        window.addEventListener("load", function () {
+            var canvas = document.getElementById("draw");
+            var ctx = canvas.getContext("2d");
+            ctx.font = "bold 24pt Arial, sans-serif";
+            ctx.fillText("Hallo HM1!", 200, 50);
+            ctx.textAlign = "right";
+            ctx.strokeText("Hallo HM1!", 200, 100);
+        });
+    </script>
+</head>
+<body>
+<canvas width="640" height="480" id="draw">Ihr Browser unterstützt Canvas leider nicht!</canvas>
+</body>
+</html>

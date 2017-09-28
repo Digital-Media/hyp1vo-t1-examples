@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Animations</title>
+    <style>
+        @keyframes colors {
+            0% {
+                background-color: yellow;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: green;
+            }
+            75% {
+                background-color: blue;
+            }
+            100% {
+                background-color: cyan;
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            animation-name: colors;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+<div>Animation Box</div>
+</body>
+</html>

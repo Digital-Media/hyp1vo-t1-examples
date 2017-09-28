@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Funktionen &ndash; Primzahl-Test</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        var isPrimeNumber = true;
+        var i = 2;
+        while (i * i <= number && isPrimeNumber) {
+            if (number % i === 0) {
+                isPrimeNumber = false;
+            }
+            i++;
+        }
+        return isPrimeNumber;
+    }
+
+    var x = 5;
+    document.write("x ist " + (isPrime(x) ? "eine" : "keine") + " Primzahl");
+</script>
+</body>
+</html>

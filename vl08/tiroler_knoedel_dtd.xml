@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rezept SYSTEM "http://www.hochleitner.cc/dtds/rezept.dtd">
+<rezept quelle="http://www.ichkoche.at/der-klassische-tiroler-knoedel-rezept-4386">
+    <gericht>Der klassische Tiroler Knödel</gericht>
+    <zutaten>
+        <zutat>
+            <ingredienz>Knödelbrot</ingredienz>
+            <menge>350</menge>
+            <einheit>g</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Milch</ingredienz>
+            <menge>200</menge>
+            <einheit>ml</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Eier</ingredienz>
+            <menge>4</menge>
+            <einheit>Stück</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Speck</ingredienz>
+            <menge>100</menge>
+            <einheit>g</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Bergsteigerwurst</ingredienz>
+            <menge>100</menge>
+            <einheit>g</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Butter</ingredienz>
+            <menge>20</menge>
+            <einheit>g</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Zwiebel</ingredienz>
+            <menge>1</menge>
+            <einheit>Stück</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Petersilie, Schnittlauch</ingredienz>
+            <menge>1</menge>
+            <einheit>KL</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Salz, Muskatnuss</ingredienz>
+            <menge>1</menge>
+            <einheit>Prise</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Mehl</ingredienz>
+            <menge>80</menge>
+            <einheit>g</einheit>
+        </zutat>
+    </zutaten>
+    <zubereitung>
+        <schritt>Für die Tiroler Knödel Knödelbrot mit Milch und Eiern vermengen und 20-30 Minuten ziehen lassen.
+        </schritt>
+        <schritt>Kleinwürfelig geschnittenen Speck und fein gewiegte Bergsteigerwurst in zerlassener Butter gemeinsam
+            mit Zwiebeln, Petersilie und Schnittlauch anbraten und mit Salz und Muskatnuss abschmecken. Mehl darüber
+            streuen und aus allen Zutaten eine feste, aber nicht zu feuchte Masse kneten.
+        </schritt>
+        <schritt>Mit befeuchteten Händen daraus Knödel formen. Einen davon als "Probeknödel" in Salzwasser knappe 15
+            Minuten kochen. Hat der Probeknödel eine zu weiche Konsistenz, muss man noch etwas Mehl unter die
+            Knödelmasse kneten. Erst wenn die Masse kompakt genug ist, kocht man die restlichen Tiroler Knödel.
+        </schritt>
+    </zubereitung>
+</rezept>

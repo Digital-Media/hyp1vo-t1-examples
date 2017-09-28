@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Zweispaltiges Layout, seitenbreit</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        div#container {
+            background-color: #33FFFF;
+        }
+
+        header {
+            background-color: #00FF66;
+        }
+
+        nav {
+            width: 15%;
+            float: left;
+        }
+
+        main {
+            width: 80%;
+            float: right;
+            background-color: #66FFCC;
+        }
+
+        footer {
+            clear: both;
+            background-color: #00CCFF;
+        }
+    </style>
+</head>
+<body>
+<div id="container">                <!-- Äußerster Container z.B. für globale Hintergrundfarbe -->
+    <header>                        <!-- Header Bereich z.B. für Überschrift -->
+        <h1>Überschrift</h1>
+    </header>
+    <nav>                           <!-- Linker Bereich z.B. für Navigation -->
+        <ul>
+            <li>Navigation 1</li>
+            <li>Navigation 2</li>
+        </ul>
+    </nav>
+    <main>                          <!-- Rechter Bereich z.B. für Inhalt/Fließtext -->
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo.</p>
+    </main>
+    <footer>                        <!-- Footer Bereich z.B. für Copyright-Info -->
+        <p>&copy; 2016 Der Autor/Die Autorin</p>
+    </footer>
+</div>
+</body>
+</html>

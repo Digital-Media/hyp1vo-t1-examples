@@ -1,0 +1,79 @@
+<!-- Nov. 2016: Not functional in Browsers -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            background: gray;
+            font: 24px Georgia, "Times New Roman", serif;
+        }
+
+        main {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 200px auto 150px;
+            grid-template-rows: 100px auto 100px;
+            grid-gap: 10px 10px;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1;
+        }
+
+        main > nav {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        main > article {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        main > aside {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 3;
+        }
+
+        header, footer {
+            margin: 4px;
+            padding: 5px;
+            min-height: 100px;
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<header>Die Überschrift</header>
+<main>
+    <nav>
+        <ul>
+            <li>Seite 1</li>
+            <li>Seite 2</li>
+        </ul>
+    </nav>
+    <article>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </article>
+    <aside>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua.
+    </aside>
+</main>
+<footer>&copy; 2016 &ndash; HM1-Vorlesung</footer>
+</body>
+</html>

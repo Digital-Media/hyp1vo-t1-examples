@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Video: Kontrollelemente</title>
+    <meta charset="utf-8">
+</head>
+<script>
+    window.addEventListener("load", function () {
+        var vid = document.getElementById("vid");
+        var btn = document.getElementById("play");
+        var volup = document.getElementById("volup");
+        var voldown = document.getElementById("voldown");
+        btn.addEventListener("click", function () {
+            if (vid.paused) {
+                vid.play();
+                btn.textContent = "Pause";
+            }
+            else {
+                vid.pause();
+                btn.textContent = "Play";
+            }
+        });
+        volup.addEventListener("click", function () {
+            if (vid.volume < 1) {
+                vid.volume += 0.1;
+            }
+        });
+        voldown.addEventListener("click", function () {
+            if (vid.volume > 0) {
+                vid.volume -= 0.1;
+            }
+        });
+    });
+</script>
+<body>
+<video width="640" height="264" id="vid">
+    <source src="videos/oceans-clip.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    <source src="videos/oceans-clip.webm" type='video/webm; codecs="vp8, vorbis"'>
+    <source src="videos/oceans-clip.ogv" type='video/ogg; codecs="theora, vorbis"'>
+</video>
+<br>
+<button type="button" id="play">Play</button>
+<button type="button" id="volup">+</button>
+<button type="button" id="voldown">-</button>
+</body>
+</html>

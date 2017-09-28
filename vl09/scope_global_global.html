@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Scope &ndash; 2x global</title>
+</head>
+<body>
+<script>
+    var scope = "global";
+    function f() {
+        scope = "local";
+        document.writeln(scope);
+    }
+    f(); // local
+    document.writeln(scope); // local
+</script>
+</body>
+</html>

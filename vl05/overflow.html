@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Dimensionsangaben: overflow</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #one {
+            overflow: visible;
+            background-color: orange;
+        }
+
+        #two {
+            overflow: hidden;
+            background-color: green;
+        }
+
+        #three {
+            overflow: scroll;
+            background-color: yellow;
+        }
+
+        #four {
+            overflow: auto;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+<div id="one">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+<div id="two">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+<div id="three">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+<div id="four">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+</body>
+</html>

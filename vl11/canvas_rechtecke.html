@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Canvas Rechtecke</title>
+    <meta charset="utf-8">
+    <script>
+        window.addEventListener("load", function () {
+            var canvas = document.getElementById("draw");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.strokeStyle = "#FF0000";
+            ctx.fillRect(10, 10, 100, 50);
+            ctx.strokeRect(50, 100, 200, 200);
+        });
+    </script>
+</head>
+<body>
+<canvas width="640" height="480" id="draw">Ihr Browser unterstützt Canvas leider nicht!</canvas>
+</body>
+</html>

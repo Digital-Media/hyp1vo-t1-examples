@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Eigenschaft: textContent</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<div>
+    <h1 id="title">Überschrift</h1>
+
+    <p>Hallo</p>
+</div>
+<script>
+    document.write("<p>textContent: " + document.getElementsByTagName("div")[0].textContent + "</p>");
+    document.write("<p>innerHTML: " + document.getElementsByTagName("div")[0].innerHTML + "</p>");
+</script>
+</body>
+</html>

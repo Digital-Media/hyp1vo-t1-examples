@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Event-Handler &ndash; Zuweisung</title>
+    <script>
+        function alertMe() {
+            window.alert("Event Handler aufgerufen!");
+        }
+    </script>
+</head>
+<body>
+<form action="" method="post">
+    <section>
+        <h1>Als HTML-Attribut</h1>
+        <p>Event handler durch HTML-Attribut "onclick" hinzugefügt</p>
+        <button name="button1" id="button1" type="button" onclick="alertMe()">Button 1</button>
+    </section>
+    <section>
+        <h1>Als JavaScript-Eigenschaft</h1>
+        <p>Event handler nur mittels JavaScript-Eigenschaft hinzugefügt</p>
+        <button name="button2" id="button2" type="button">Button 2</button>
+    </section>
+    <section>
+        <h1>Mittels DOM Level 2 Methoden</h1>
+        <p>Durch Verwendung von addEventListener()</p>
+        <button name="button3" id="button3" type="button">Button 3</button>
+    </section>
+</form>
+
+<script>
+    var btn2 = document.getElementById("button2");
+    btn2.onclick = alertMe;
+
+    var btn3 = document.getElementById("button3");
+    btn3.addEventListener("click", alertMe);
+</script>
+</body>
+</html>
