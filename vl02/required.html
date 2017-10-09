@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <title>Pflichtfelder</title>
     <meta charset="utf-8">
-    <title>Eingabefelder: Text</title>
 </head>
 <body>
 <form action="mailto:john.doe@johndoe.com" method="post" enctype="text/plain">
-    <input type="text">
-    <input>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <button type="submit">Absenden</button>
 </form>
 </body>
 </html>

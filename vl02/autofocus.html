@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <title>Autofokus</title>
     <meta charset="utf-8">
-    <title>Buttons: Button</title>
 </head>
 <body>
 <form action="mailto:john.doe@johndoe.com" method="post" enctype="text/plain">
-    <button type="button">Klick mich!</button>
-    <input type="button" value="Klick mich!">
+    <label for="searchbox">Suche:</label>
+    <input type="search" id="searchbox" autofocus>
+    <button type="submit">Absenden</button>
 </form>
 </body>
 </html>
