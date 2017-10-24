@@ -2,21 +2,23 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Dimensionsangaben: auto</title>
+    <title>Margin Collapse</title>
     <style>
         #one {
-            width: auto;
-            height: auto;
+            margin-bottom: 16px;
+            margin-top: 16px;
             background-color: orange;
         }
 
         #two {
+            margin-bottom: 50px;
+            margin-top: 50px;
             background-color: green;
         }
     </style>
 </head>
 <body>
-<div id="one">&lt;div&gt;-Element 1</div>
-<div id="two">&lt;div&gt;-Element 2</div>
+<p id="one">Absatz 1</p>
+<p id="two">Absatz 2</p>
 </body>
 </html>

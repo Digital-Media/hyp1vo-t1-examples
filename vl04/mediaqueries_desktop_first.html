@@ -2,14 +2,16 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Fixbreiten-Layout, dreispaltig</title>
+    <title>Media Queries: Desktop first</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
             margin: 0;
+            box-sizing: border-box;
         }
 
         div#container {
-            width: 700px;
+            width: 960px;
             margin: 0 auto;
             background-color: #33FFFF;
         }
@@ -19,30 +21,72 @@
         }
 
         nav {
-            width: 180px;
+            width: 25%;
             float: left;
         }
 
         main {
-            width: 500px;
+            width: 75%;
             float: right;
             background-color: #66FFCC;
         }
 
         section#main {
-            width: 350px;
+            width: 80%;
             float: left;
             background-color: #BBBBBB;
         }
 
         section#sidebar {
-            width: 130px;
+            width: 20%;
             float: right;
         }
 
         footer {
             clear: both;
             background-color: #00CCFF;
+        }
+
+        header, nav, footer, section {
+            padding: 0.5em;
+        }
+
+        @media only screen and (max-width: 960px) {
+            div#container {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul {
+                padding: 0;
+            }
+
+            nav ul li {
+                list-style-type: none;
+                display: inline;
+            }
+
+            nav ul li:not(:last-child) {
+                margin-right: 0.5em;
+            }
+
+            main {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            section#main, section#sidebar, main {
+                float: none;
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -70,7 +114,7 @@
         </section>
     </main>
     <footer>                            <!-- Footer-Bereich z.B. für Copyright-Info -->
-        <p>&copy; 2016 Der Autor/Die Autorin</p>
+        <p>&copy; 2017 Der Autor/Die Autorin</p>
     </footer>
 </div>
 </body>

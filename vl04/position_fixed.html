@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>position: relative</title>
+    <title>position: fixed</title>
     <style>
         div {
             border: 1px solid black;
@@ -16,7 +16,7 @@
         }
 
         #two {
-            position: relative;
+            position: fixed;
             left: 80px;
             top: 30px;
             background-color: green;
@@ -25,11 +25,18 @@
         #three {
             background-color: yellow;
         }
+
+        #four, #five, #six {
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
 <div id="one">Erstes &lt;div&gt;-Element (static)</div>
-<div id="two">Zweites &lt;div&gt;-Element (relative)</div>
+<div id="two">Zweites &lt;div&gt;-Element (fixed)</div>
 <div id="three">Drittes &lt;div&gt;-Element (static)</div>
+<div id="four">Viertes &lt;div&gt;-Element (static)</div>
+<div id="five">Fünftes &lt;div&gt;-Element (static)</div>
+<div id="six">Sechstes &lt;div&gt;-Element (static)</div>
 </body>
 </html>

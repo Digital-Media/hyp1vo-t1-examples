@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Media Queries: Mobile first</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div#container {
+            background-color: #33FFFF;
+        }
+
+        header {
+            background-color: #00FF66;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline;
+        }
+
+        nav ul li:not(:last-child) {
+            margin-right: 0.5em;
+        }
+
+        main {
+            background-color: #66FFCC;
+        }
+
+        section#main {
+            background-color: #BBBBBB;
+        }
+
+        footer {
+            background-color: #00CCFF;
+        }
+
+        header, nav, footer, section {
+            padding: 0.5em;
+        }
+
+        @media only screen and (min-width: 480px) {
+            main {
+                width: 100%;
+                float: right; /* float, weil Container sonst auf Höhe 0 kollabiert */
+            }
+
+            section#main {
+                float: left;
+                width: 80%;
+            }
+
+            section#sidebar {
+                float: left;
+                width: 20%;
+            }
+
+            footer {
+                clear: both;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            nav {
+                float: left;
+                width: 25%;
+                text-align: left;
+            }
+
+            main {
+                width: 75%;
+            }
+
+            nav ul {
+                padding-left: 40px;
+            }
+
+            nav ul li {
+                list-style-type: disc;
+                display: list-item;
+            }
+
+            nav ul li:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+
+        @media only screen and (min-width: 960px) {
+            div#container {
+                width: 960px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">                    <!-- Äußerster Container z.B. für globale Hintergrundfarbe -->
+    <header>                            <!-- Header-Bereich z.B. für Überschrift -->
+        <h1>Überschrift</h1>
+    </header>
+    <nav>                               <!-- Linker Bereich z.B. für Navigation -->
+        <ul>
+            <li>Navigation 1</li>
+            <li>Navigation 2</li>
+        </ul>
+    </nav>
+    <main>                              <!-- Rechter Bereich z.B. für Inhalt/Fließtext -->
+        <section id="main">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                vitae, justo.</p>
+        </section>
+        <section id="sidebar">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </section>
+    </main>
+    <footer>                            <!-- Footer-Bereich z.B. für Copyright-Info -->
+        <p>&copy; 2017 Der Autor/Die Autorin</p>
+    </footer>
+</div>
+</body>
+</html>
