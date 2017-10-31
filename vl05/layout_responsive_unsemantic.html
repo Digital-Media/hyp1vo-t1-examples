@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive-Layout, Unsemantic</title>
+    <!-- Optional: Reset und Text Stylesheets
+    <link rel="stylesheet" href="unsemantic_css/reset.css">
+    <link rel="stylesheet" href="unsemantic_css/text.css">-->
+    <link rel="stylesheet" href="unsemantic_css/unsemantic-grid-responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        div#container {
+            background-color: #33FFFF;
+            overflow: auto;
+        }
+
+        header {
+            background-color: #00FF66;
+        }
+
+        main {
+            background-color: #66FFCC;
+        }
+
+        footer {
+            background-color: #00CCFF;
+        }
+
+        header, nav, main, footer {
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+<div id="container" class="grid-container">       <!-- Äußerster Container z.B. für globale Hintergrundfarbe -->
+    <header class="grid-100">                    <!-- Header-Bereich z.B. für Überschrift -->
+        <h1>Überschrift</h1>
+    </header>
+    <nav class="grid-25">                        <!-- Linker Bereich z.B. für Navigation -->
+        <ul>
+            <li>Navigation 1</li>
+            <li>Navigation 2</li>
+        </ul>
+    </nav>
+    <main class="grid-75">                       <!-- Rechter Bereich z.B. für Inhalt/Fließtext -->
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+            sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+            justo.</p>
+    </main>
+    <footer class="grid-100">                    <!-- Footer-Bereich z.B. für Copyright-Info -->
+        <p>&copy; 2017 Der Autor/Die Autorin</p>
+    </footer>
+</div>
+</body>
+</html>

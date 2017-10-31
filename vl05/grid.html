@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Layout</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #container {
+            display: grid;
+            max-width: 75rem;
+            margin: 0 auto;
+            grid-template-columns: [header-start nav-start footer-start] 1fr [nav-end main-start] 3fr [header-end main-end footer-end];
+            grid-template-rows: [row1-start] 6rem [row1-end row2-start] 1fr [row2-end row3-start] 6rem [row3-end];
+            grid-template-areas: "header header" "nav main" "footer footer";
+            grid-gap: 0.5rem;
+        }
+
+        header {
+            background-color: #00FF66;
+            grid-column: header-start / header-end;
+            grid-row: row1-start / row1-end;
+            grid-area: header;
+        }
+
+        nav {
+            background-color: #33FFFF;
+            grid-column: nav-start / nav-end;
+            grid-row: row2-start / row2-end;
+            grid-area: nav;
+        }
+
+        main {
+            background-color: #66FFCC;
+            grid-column: main-start / main-end;
+            grid-row: row2-start / row2-end;
+            grid-area: main;
+        }
+
+        footer {
+            background-color: #00CCFF;
+            grid-column: footer-start / footer-end;
+            grid-row: row3-start / row3-end;
+            grid-area: footer;
+        }
+
+        header, nav, main, footer {
+            padding: 0.5rem;
+        }
+
+        @media all and (max-width: 640px) {
+            #container {
+                grid-template-rows: [row1-start] 6rem [row1-end row2-start] auto [row2-end row3-start] auto [row3-end row4-start] 6rem [row4-end];
+            }
+
+            nav {
+                grid-column: nav-start / header-end;
+            }
+
+            main {
+                grid-column: header-start / main-end;
+                grid-row: row3-start / row3-end;
+            }
+
+            footer {
+                grid-row: row4-start / row4-end;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Die Überschrift</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Seite 1</li>
+            <li>Seite 2</li>
+        </ul>
+    </nav>
+    <main>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </main>
+    <footer>&copy; 2017 &ndash; HM1-Vorlesung</footer>
+</div>
+</body>
+</html>

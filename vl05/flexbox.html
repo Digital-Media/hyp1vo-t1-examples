@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="utf-8">
     <title>Flexible Box Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+        }
+
         body {
             background: gray;
-            font: 24px Georgia, "Times New Roman", serif;
+            font: 1.5rem Georgia, "Times New Roman", serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+        }
+
+        header, footer {
+            min-height: 6rem;
+            background: lightgreen;
         }
 
         main {
-            min-height: 400px;
-            margin: 0;
-            padding: 0;
+            min-height: 25rem;
             display: flex;
-            flex-flow: row;
+            flex-direction: row;
         }
 
         main > article {
-            margin: 4px;
-            padding: 5px;
             background: lightcoral;
             flex: 3 1 60%;
             order: 2;
         }
 
         main > nav {
-            margin: 4px;
-            padding: 5px;
             background: lightblue;
             flex: 1 6 20%;
             order: 1;
         }
 
         main > aside {
-            margin: 4px;
-            padding: 5px;
             background: lightblue;
             flex: 1 6 20%;
             order: 3;
         }
 
-        header, footer {
-            margin: 4px;
-            padding: 5px;
-            min-height: 100px;
-            background: lightgreen;
+        footer {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        header, article, nav, aside, footer {
+            margin: 0.25em;
+            padding: 0.5em;
         }
 
         /* Wenn schmäler als 640px -> untereinander */
         @media all and (max-width: 640px) {
             main {
-                flex-flow: column;
                 flex-direction: column;
             }
 
@@ -61,14 +71,16 @@
             }
 
             main > article, main > nav, main > aside, header, footer {
-                min-height: 50px;
+                min-height: 3.5rem;
             }
         }
     </style>
 </head>
 
 <body>
-<header>Die Überschrift</header>
+<header>
+    <h1>Die Überschrift</h1>
+</header>
 <main>
     <article>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
         et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -87,6 +99,6 @@
         dolore magna aliquyam erat, sed diam voluptua.
     </aside>
 </main>
-<footer>&copy; 2016 &ndash; HM1-Vorlesung</footer>
+<footer>&copy; 2017 &ndash; HM1-Vorlesung</footer>
 </body>
 </html>
