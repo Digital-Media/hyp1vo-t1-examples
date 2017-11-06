@@ -1,0 +1,50 @@
+# Tiroler Knödel Rezept
+%YAML 1.2
+---
+gericht: Der klassische Tiroler Knödel
+quelle: https://www.ichkoche.at/der-klassische-tiroler-knoedel-rezept-4386
+zutaten:
+  - ingredienz: Knödelbrot
+    menge: 350
+    einheit: g
+  - ingredienz: Milch
+    menge: 200
+    einheit: ml
+  - ingredienz: Eier
+    menge: 4
+    einheit: Stück
+  - ingredienz: Speck
+    menge: 100
+    einheit: g
+  - ingredienz: Bergsteigerwurst
+    menge: 100
+    einheit: g
+  - ingredienz: Butter
+    menge: 20
+    einheit: g
+  - ingredienz: Zwiebel
+    menge: 1
+    einheit: Stück
+  - ingredienz: Petersilie, Schnittlauch
+    menge: 1
+    einheit: KL
+  - ingredienz: Salz, Muskatnuss
+    menge: 1
+    einheit: Prise
+  - ingredienz: Mehl
+    menge: 80
+    einheit: g
+zubereitung:
+  - >
+    Für die Tiroler Knödel Knödelbrot mit Milch und Eiern vermengen und 20-30
+    Minuten ziehen lassen.
+  - >
+    Kleinwürfelig geschnittenen Speck und fein gewiegte Bergsteigerwurst in
+    zerlassener Butter gemeinsam mit Zwiebeln, Petersilie und Schnittlauch
+    anbraten und mit Salz und Muskatnuss abschmecken. Mehl darüber streuen und aus
+    allen Zutaten eine feste, aber nicht zu feuchte Masse kneten.
+  - >
+    Mit befeuchteten Händen daraus Knödel formen. Einen davon als "Probeknödel" in
+    Salzwasser knappe 15 Minuten kochen. Hat der Probeknödel eine zu weiche
+    Konsistenz, muss man noch etwas Mehl unter die Knödelmasse kneten. Erst wenn
+    die Masse kompakt genug ist, kocht man die restlichen Tiroler Knödel.
