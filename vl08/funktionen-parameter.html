@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Funktionen und Parameter</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function logData(first, last) {
+        console.log("Vorname: " + first);
+        console.log("Nachname: " + last);
+        if (arguments.length > 2) {
+            for (let i = 2; i < arguments.length; i++) {
+                console.log("Zusätzlich: " + arguments[i]);
+            }
+        }
+    }
+
+    logData("John", "Doe"); // Vorname: John, Nachname: Doe
+    logData("John"); // Vorname John, Nachname: undefined
+    logData("John", "Doe", 23, "Doeville");
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Funktionen</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function sayHello() {
+        console.log("Hallo Welt!");
+        document.write("<p>Hallo Welt!</p>");
+    }
+
+    sayHello();
+
+    function saySomething(message) {
+        console.log(message);
+        document.write(message);
+    }
+
+    saySomething("Hallo Du!");
+
+    function saySomethingWithChange(message) {
+        message += " So schauts aus.";
+        console.log(message);
+        document.write(message);
+    }
+
+    let text = "Der Text bleibt."
+    saySomethingWithChange(text);
+    console.log(text);
+</script>
+</body>
+</html>

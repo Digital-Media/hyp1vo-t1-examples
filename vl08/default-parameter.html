@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Funktionen mit Default-Parameter</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function quadrat(x = 0) {
+        return x * x;
+    }
+
+    document.write("<p>Mit Argument: " + quadrat(5) + "</p>"); // 25
+    document.write("<p>Ohne Argument: " + quadrat() + "</p>"); // 0
+</script>
+</body>
+</html>

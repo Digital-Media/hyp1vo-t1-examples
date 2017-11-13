@@ -2,17 +2,21 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Scope &ndash; 2x global</title>
+    <title>Scope &ndash; global vs. local</title>
 </head>
 <body>
 <script>
-    var scope = "global";
+    "use strict";
+
+    let scope = "global";
+
     function f() {
-        scope = "local";
+        let scope = "local";
         document.writeln(scope);
     }
+
     f(); // local
-    document.writeln(scope); // local
+    document.writeln(scope); // global
 </script>
 </body>
 </html>
