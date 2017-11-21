@@ -3,24 +3,27 @@
 <head>
     <meta charset="utf-8">
     <title>window-Objekt &ndash; Beispiel</title>
-    <script>
-        var myWindow;
-        function openWindow() {
-            myWindow = window.open("window.html", "NewWindow", "width=300, height=200, scrollbars");
-            myWindow.focus();
-        }
-        function checkOpen() {
-            if (myWindow.closed) {
-                alert("Fenster wurde geschlossen!");
-            }
-            else {
-                alert("Fenster ist noch offen!");
-            }
-        }
-    </script>
 </head>
 <body>
 <a href="javascript:openWindow()">Öffne Fenster</a>
 <a href="javascript:checkOpen()">Überprüfe Fenster</a>
+
+<script>
+    let myWindow;
+
+    function openWindow() {
+        myWindow = window.open("window.html", "NewWindow", "width=300, height=200, scrollbars=yes");
+        myWindow.focus();
+    }
+
+    function checkOpen() {
+        if (myWindow.closed) {
+            alert("Fenster wurde geschlossen!");
+        }
+        else {
+            alert("Fenster ist noch offen!");
+        }
+    }
+</script>
 </body>
 </html>

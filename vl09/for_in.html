@@ -6,14 +6,26 @@
 </head>
 <body>
 <script>
-    var farben = [];
-    farben["rot"] = "#FF0000";
-    farben["gruen"] = "#00FF00";
-    farben["blau"] = "#0000FF";
+    // for-in mit einem "klassischen" Objekt
+    let student = {
+        name: "John Doe",
+        age: 22,
+        program: "MTD",
+        languages: ["Java"]
+    };
 
-    for (var idx in farben) {
-        document.writeln(farben[idx]);
+    for (let property in student) {
+        console.log("Eigenschaft: " + property);
+        console.log("Wert: " + student[property]);
     }
+
+    // for-in mit einem Array
+    /*let numbers = [1, 2, 3, 4, 5];
+
+    for (let index in numbers) {
+        console.log("Eigenschaft: " + index);
+        console.log("Wert: " + numbers[index]);
+    }*/
 </script>
 </body>
 </html>

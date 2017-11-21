@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Vordefinierte Objekte: String</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    let text = "Das ist ein langer Text";
+
+    // Zeichen an Position ausgeben
+    console.log(text.charAt(4)); // i
+    // Position des ersten Vorkommens eines Zeichens
+    console.log(text.indexOf("T")); // 19
+    // Substring ab Position 8
+    console.log(text.substr(8)); // ein langer Text
+    // String bei den Leerzeichen teilen
+    console.log(text.split(" ")); // ["Das", "ist", "ein", "langer", "Text"]
+    // Länge des Strings
+    console.log(text.length); // 23
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON Example</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<script>
+    let jsonObject = {
+        "firstName": "John",
+        "lastName": "Doe",
+        "age": 25,
+        "address": {
+            "street": "21 Doe St.",
+            "city": "Doeville",
+            "zip": "12345",
+            "state": "NY",
+            "country": "USA"
+        },
+        "phoneNumbers": [
+            {
+                "type": "home",
+                "number": "800 123 456-789"
+            },
+            {
+                "type": "work",
+                "number": "800 999 666-333"
+            }
+        ]
+    };
+
+    console.log(jsonObject.lastName); // Doe
+    console.log(jsonObject.address.street); // 21 Doe St.
+    console.log(jsonObject.phoneNumbers[1].number); // 800 999 666-333
+</script>
+</body>
+</html>

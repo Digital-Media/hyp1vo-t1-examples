@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Studierende/r mit Objekt-Literal-Syntax</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    // Daten des/der Studierenden & Ausgabe bzw. Änderung der Daten
+    let student = {
+        name: "John Doe",
+        age: 22,
+        program: "MTD",
+        languages: ["Java"],
+        showLanguages: function () {
+            console.log(this.name + " (" + this.age + ", " + this.program + ") beherrscht diese Sprachen:");
+            for (let i = 0; i < this.languages.length; i++) {
+                console.log(this.languages[i]);
+            }
+        },
+        learnNewLanguage: function (language) {
+            this.languages[this.languages.length] = language;
+        }
+    };
+
+    // Aufrufe
+    student.showLanguages(); // Java
+    student.learnNewLanguage("JavaScript");
+    student.showLanguages(); // Java, JavaScript
+</script>
+</body>
+</html>

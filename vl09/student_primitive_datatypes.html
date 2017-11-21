@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Studierende/r nur mit primitiven Datentypen</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    // Daten des/der Studierenden
+    let studentName = "John Doe";
+    let studentAge = 22;
+    let studentProgram = "MTD";
+    let studentLanguages = ["Java"];
+
+    // Ausgabe bzw. Änderung der Daten
+    function showLanguages() {
+        console.log(studentName + " (" + studentAge + ", " + studentProgram + ") beherrscht diese Sprachen:");
+        for (let i = 0; i < studentLanguages.length; i++) {
+            console.log(studentLanguages[i]);
+        }
+    }
+
+    function learnNewLanguage(language) {
+        studentLanguages[studentLanguages.length] = language;
+    }
+
+    // Aufrufe
+    showLanguages(); // Java
+
+    learnNewLanguage("JavaScript");
+
+    showLanguages(); // Java, JavaScript
+</script>
+</body>
+</html>

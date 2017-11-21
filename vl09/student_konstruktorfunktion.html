@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Studierende/r mit Konstruktorfunktion</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    // Daten des/der Studierenden & Ausgabe bzw. Änderung der Daten definieren
+    function Student(name, age, program, languages) {
+        this.name = name;
+        this.age = age;
+        this.program = program;
+        this.languages = languages;
+        this.showLanguages = function () {
+            console.log(this.name + " (" + this.age + ", " + this.program + ") beherrscht diese Sprachen:");
+            for (let i = 0; i < this.languages.length; i++) {
+                console.log(this.languages[i]);
+            }
+        };
+        this.learnNewLanguage = function (language) {
+            this.languages[this.languages.length] = language;
+        };
+    }
+
+    // Anlegen der Studierenden-Objekte
+    let student1 = new Student("John Doe", 22, "MTD", ["Java"]);
+    let student2 = new Student("Jane Doe", 25, "SE", ["Pascal", "C", "Java"]);
+
+    // Aufrufe
+    student1.showLanguages(); // Java
+    student1.learnNewLanguage("JavaScript");
+    student1.showLanguages(); // Java, JavaScript
+    student2.showLanguages(); // Pascal, C, Java
+</script>
+</body>
+</html>
