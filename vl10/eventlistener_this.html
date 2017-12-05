@@ -14,9 +14,9 @@
 <a href="https://www.fh-ooe.at/">Ein Link</a>
 <a href="http://orf.at/">Noch ein Link</a>
 <script>
-    var link = document.getElementsByTagName("a")[0];
-    link.addEventListener("click", showURL);
-    document.getElementsByTagName("a")[1].addEventListener("click", showURL);
+    let links = document.getElementsByTagName("a");
+    links[0].addEventListener("click", showURL);
+    links[1].addEventListener("click", showURL);
 </script>
 </body>
 </html>

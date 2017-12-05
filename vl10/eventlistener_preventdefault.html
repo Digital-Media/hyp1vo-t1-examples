@@ -5,7 +5,7 @@
     <title>Event-Handler &ndash; Standardverhalten unterbinden</title>
     <script>
         function showURL(event) {
-            var link = document.getElementsByTagName("a")[0];
+            let link = document.querySelector("a");
             alert(link.href);
             event.preventDefault();
         }
@@ -14,7 +14,7 @@
 <body>
 <a href="https://www.fh-ooe.at/">Ein Link</a>
 <script>
-    var link = document.getElementsByTagName("a")[0];
+    let link = document.querySelector("a");
     link.addEventListener("click", showURL);
 </script>
 </body>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Clone</title>
+    <meta charset="utf-8">
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            $("img").clone().appendTo("#photos");
+        });
+    </script>
+</head>
+<body>
+<div id="src">
+    <p>Originale:</p>
+    <img src="html5logo.png" alt="HTML5-Logo">
+    <img src="html5logo.png" alt="HTML5-Logo">
+</div>
+<div id="photos">
+    <p>Kopien:</p>
+</div>
+</body>
+</html>

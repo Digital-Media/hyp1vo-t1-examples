@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Chaining</title>
+    <meta charset="utf-8">
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(function () {
+            $("ul li").add("ol li").filter(".current").not(".hover").each(function () {
+                alert($(this).text());
+            });
+        });
+    </script>
+</head>
+<body>
+<ul>
+    <li class="current">L1, E1</li>
+    <li class="foo">L1, E2</li>
+    <li>L1, E3</li>
+</ul>
+<ol>
+    <li>L2, E1</li>
+    <li class="current hover">L2, E2</li>
+    <li class="foo">L2, E3</li>
+</ol>
+</body>
+</html>

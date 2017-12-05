@@ -1,5 +1,5 @@
 // Merkt sich, ob Fehler aufgetreten sind
-var hasErrors = false;
+let hasErrors = false;
 
 function isValid(event) {
     // Validierung der Formularfelder und setzen von hasErrors auf true, wenn ein Fehler passiert ist
@@ -10,6 +10,6 @@ function isValid(event) {
 }
 
 // Zuweisen der Funktion auf submit-Handler des Formulars
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("dataform").addEventListener("submit", isValid);
 });

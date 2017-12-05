@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element: Eigenschaften und Methoden</title>
+    <style>
+        .blue {
+            color: blue;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    let heading = document.createElement("h1"); // Elementknoten erzeugen
+    heading.textContent = "Überschrift"; // Text setzen
+    heading.setAttribute("id", "important"); // setzt <h1> das id-Attribut mit dem Wert important
+    heading.id = "normal"; // Ändert den Wert der wieder auf normal
+    heading.className = "blue"; // Setzt die Klasse blue
+    heading.classList.add("underline"); // Fügt die Klasse underline hinzu
+    document.body.appendChild(heading); // Hängt <h1> als Kind von <body> an
+</script>
+</body>
+</html>

@@ -7,12 +7,11 @@
 <body>
 <div>
     <h1 id="title">Überschrift</h1>
-
     <p>Hallo</p>
 </div>
 <script>
-    document.write("<p>textContent: " + document.getElementsByTagName("div")[0].textContent + "</p>");
-    document.write("<p>innerHTML: " + document.getElementsByTagName("div")[0].innerHTML + "</p>");
+    document.write("<p>textContent: " + document.querySelector("div").textContent + "</p>");
+    document.write("<p>innerHTML: " + document.querySelector("div").innerHTML + "</p>");
 </script>
 </body>
 </html>
