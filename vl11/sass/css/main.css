@@ -1,0 +1,33 @@
+body {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  color: #bada55; }
+
+a:link, a:visited, a:hover, a:active {
+  color: #bada55; }
+
+nav ul {
+  list-style: none;
+  padding: 0; }
+nav li {
+  display: inline-block; }
+nav a {
+  text-decoration: none; }
+
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.message, .status, .error {
+  border: 3px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.status {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+/*# sourceMappingURL=main.css.map */
