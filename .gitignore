@@ -1,6 +1,12 @@
 # PhpStorm IDE project directory
 .idea
 
+# Node.js modules
+node_modules
+
+# Sass cache
+.sass-cache
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
