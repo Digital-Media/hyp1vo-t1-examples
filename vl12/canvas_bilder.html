@@ -9,12 +9,13 @@
         }
     </style>
     <script>
+        // Wichtig: load und nicht DOMContentLoaded, sonst ist img nicht verfügbar (weil noch nicht geladen)
         window.addEventListener("load", function () {
-            var canvas = document.getElementById("draw");
-            var ctx = canvas.getContext("2d");
-            var img = document.getElementById("image");
+            let canvas = document.getElementById("draw");
+            let ctx = canvas.getContext("2d");
+            let img = document.getElementById("image");
             ctx.drawImage(img, 20, 20);
-            var jsImg = new Image();
+            let jsImg = new Image();
             jsImg.src = "html5logo.png";
             jsImg.addEventListener("load", function () {
                 ctx.drawImage(jsImg, 0, 24, 92, 104, 150, 60, 46, 52);

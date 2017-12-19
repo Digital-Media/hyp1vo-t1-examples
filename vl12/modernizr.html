@@ -6,19 +6,19 @@
     <script src="modernizr-custom.js"></script>
     <script>
         function printSupport(feature, support) {
-            var text = feature + ": ";
+            let text = feature + ": ";
             if (support) {
                 text += "Supported! :)";
             }
             else {
                 text += "Not supported! :(";
             }
-            var li = document.createElement("li");
+            let li = document.createElement("li");
             li.textContent = text;
             document.getElementById("features").appendChild(li);
         }
 
-        window.addEventListener("load", function () {
+        document.addEventListener("DOMContentLoaded", function () {
             printSupport("Canvas", Modernizr.canvas);
             printSupport("HTML5 Video", Modernizr.video);
             printSupport("Geolocation", Modernizr.geolocation);

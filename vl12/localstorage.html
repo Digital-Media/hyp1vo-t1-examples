@@ -12,8 +12,8 @@
     </style>
     <meta charset="utf-8">
     <script>
-        window.addEventListener("load", function () {
-            var note = document.getElementById("sticky");
+        document.addEventListener("DOMContentLoaded", function () {
+            let note = document.getElementById("sticky");
 
             if (localStorage.getItem("content")) {
                 note.innerHTML = localStorage.getItem("content");

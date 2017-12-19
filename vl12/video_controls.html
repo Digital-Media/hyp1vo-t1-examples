@@ -5,11 +5,12 @@
     <meta charset="utf-8">
 </head>
 <script>
+    // Wichtig: load und nicht DOMContentLoaded, damit Videos geladen und verfügbar sind
     window.addEventListener("load", function () {
-        var vid = document.getElementById("vid");
-        var btn = document.getElementById("play");
-        var volup = document.getElementById("volup");
-        var voldown = document.getElementById("voldown");
+        let vid = document.getElementById("vid");
+        let btn = document.getElementById("play");
+        let volup = document.getElementById("volup");
+        let voldown = document.getElementById("voldown");
         btn.addEventListener("click", function () {
             if (vid.paused) {
                 vid.play();

@@ -4,9 +4,9 @@
     <title>Canvas Rechtecke</title>
     <meta charset="utf-8">
     <script>
-        window.addEventListener("load", function () {
-            var canvas = document.getElementById("draw");
-            var ctx = canvas.getContext("2d");
+        document.addEventListener("DOMContentLoaded", function () {
+            let canvas = document.getElementById("draw");
+            let ctx = canvas.getContext("2d");
             ctx.fillStyle = "blue";
             ctx.strokeStyle = "#FF0000";
             ctx.fillRect(10, 10, 100, 50);

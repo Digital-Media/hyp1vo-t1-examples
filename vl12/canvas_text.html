@@ -4,9 +4,9 @@
     <title>Canvas Text</title>
     <meta charset="utf-8">
     <script>
-        window.addEventListener("load", function () {
-            var canvas = document.getElementById("draw");
-            var ctx = canvas.getContext("2d");
+        document.addEventListener("DOMContentLoaded", function () {
+            let canvas = document.getElementById("draw");
+            let ctx = canvas.getContext("2d");
             ctx.font = "bold 24pt Arial, sans-serif";
             ctx.fillText("Hallo HM1!", 200, 50);
             ctx.textAlign = "right";

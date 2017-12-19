@@ -13,15 +13,15 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD2Mn93P5zH0Y7kKaZsJiU2qIGOiV6Dx4"></script>
     <script>
         function initialize() {
-            var map = new google.maps.Map(document.getElementById("map"), {
+            let map = new google.maps.Map(document.getElementById("map"), {
                 center: {lat: 47.61, lng: 13.783},
                 zoom: 8
             });
-            var infoWindow = new google.maps.InfoWindow({map: map});
+            let infoWindow = new google.maps.InfoWindow({map: map});
 
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function (position) {
-                    var pos = {
+                    let pos = {
                         lat: position.coords.latitude,
                         lng: position.coords.longitude
                     };
@@ -43,7 +43,7 @@
             infoWindow.setContent(browserHasGeolocation ? "Fehler: Geolocation-Anfrage abgelehnt." : "Fehler: Dein Browser untersützt keine Geolocation.");
         }
 
-        window.addEventListener("load", initialize);
+        document.addEventListener("DOMContentLoaded", initialize);
     </script>
 </head>
 <body>
