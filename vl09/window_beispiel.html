@@ -9,6 +9,8 @@
 <a href="javascript:checkOpen()">Überprüfe Fenster</a>
 
 <script>
+    "use strict";
+
     let myWindow;
 
     function openWindow() {
@@ -19,8 +21,7 @@
     function checkOpen() {
         if (myWindow.closed) {
             alert("Fenster wurde geschlossen!");
-        }
-        else {
+        } else {
             alert("Fenster ist noch offen!");
         }
     }

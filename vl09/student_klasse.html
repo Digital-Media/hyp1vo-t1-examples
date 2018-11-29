@@ -18,10 +18,7 @@
         }
 
         showLanguages() {
-            console.log(this.name + " (" + this.age + ", " + this.program + ") beherrscht diese Sprachen:");
-            for (let i = 0; i < this.languages.length; i++) {
-                console.log(this.languages[i]);
-            }
+            console.log(this.name + " (" + this.age + ", " + this.program + ") beherrscht diese Sprachen: " + this.languages);
         }
 
         learnNewLanguage(language) {
@@ -36,8 +33,8 @@
     // Aufrufe
     student1.showLanguages(); // Java
     student1.learnNewLanguage("JavaScript");
-    student1.showLanguages(); // Java, JavaScript
-    student2.showLanguages(); // Pascal, C, Java
+    student1.showLanguages(); // Java,JavaScript
+    student2.showLanguages(); // Pascal,C,Java
 </script>
 </body>
 </html>
