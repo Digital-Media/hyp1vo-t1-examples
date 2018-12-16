@@ -2,19 +2,24 @@
   "name": "hm1-gulp-example",
   "version": "1.0.0",
   "description": "Using gulp tasks for your project",
-  "main": "index.js",
+  "main": "Gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [],
+  "author": {
+    "name": "Wolfgang Hochleitner",
+    "email": "wolfgang.hochleitner@fh-hagenberg.at",
+    "url": "https://about.me/wolfgang.hochleitner"
+  },
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-eslint": "^4.0.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify-es": "^0.1.7"
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-eslint": "^5.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify-es": "^1.0.4"
   }
 }

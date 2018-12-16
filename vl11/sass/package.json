@@ -1,14 +1,18 @@
 {
-  "name": "sass",
+  "name": "hm1-sass-example",
   "version": "1.0.0",
   "description": "",
   "main": " ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Wolfgang Hochleitner",
+    "email": "wolfgang.hochleitner@fh-hagenberg.at",
+    "url": "https://about.me/wolfgang.hochleitner"
+  },
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.11.0"
   }
 }

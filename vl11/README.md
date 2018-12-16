@@ -19,5 +19,5 @@ Für alle Beispiele muss eine aktuelle Node.js Version (https://nodejs.org/) ins
 
 1. node-sass global installieren: `npm install -g node-sass`.
 2. Commandline/Terminal öffnen.
-3. SCSS-Datei zu CSS-Datei konvertieren: `sass _scss\main.scc css\main.css`.
+3. SCSS-Datei zu CSS-Datei konvertieren: `node-sass _scss\main.scc css\main.css`.
 4. Nach jeder Änderung in der SCSS-Datei muss dieser Aufruf erneut durchgeführt werden.
