@@ -44,9 +44,14 @@ function server(done) {
     done();
 }
 
+function reload(done) {
+    browsersync.reload();
+    done();
+}
+
 function watcher() {
-    watch("_scss/**/*.scss", series(styles, browsersync.reload));
-    watch("_js/**/*.js", series(scripts, browsersync.reload));
+    watch("_scss/**/*.scss", series(styles, reload));
+    watch("_js/**/*.js", series(scripts, reload));
 }
 
 exports.test = test;
