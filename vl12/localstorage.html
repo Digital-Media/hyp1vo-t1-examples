@@ -17,16 +17,14 @@
 
             if (localStorage.getItem("content")) {
                 note.innerHTML = localStorage.getItem("content");
-            }
-            else {
+            } else {
                 note.innerHTML = "Schreib auf mich!";
             }
 
             note.addEventListener("blur", function () {
                 if (this.textContent === "") {
                     localStorage.removeItem("content");
-                }
-                else {
+                } else {
                     localStorage.setItem("content", this.innerHTML);
                 }
             });

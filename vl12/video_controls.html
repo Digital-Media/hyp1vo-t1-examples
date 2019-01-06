@@ -8,25 +8,24 @@
     // Wichtig: load und nicht DOMContentLoaded, damit Videos geladen und verfügbar sind
     window.addEventListener("load", function () {
         let vid = document.getElementById("vid");
-        let btn = document.getElementById("play");
-        let volup = document.getElementById("volup");
-        let voldown = document.getElementById("voldown");
-        btn.addEventListener("click", function () {
+        let playPause = document.getElementById("playpause");
+        let volUp = document.getElementById("volup");
+        let volDown = document.getElementById("voldown");
+        playPause.addEventListener("click", function () {
             if (vid.paused) {
                 vid.play();
-                btn.textContent = "Pause";
-            }
-            else {
+                playPause.textContent = "Pause";
+            } else {
                 vid.pause();
-                btn.textContent = "Play";
+                playPause.textContent = "Play";
             }
         });
-        volup.addEventListener("click", function () {
+        volUp.addEventListener("click", function () {
             if (vid.volume < 1) {
                 vid.volume += 0.1;
             }
         });
-        voldown.addEventListener("click", function () {
+        volDown.addEventListener("click", function () {
             if (vid.volume > 0) {
                 vid.volume -= 0.1;
             }
@@ -40,7 +39,7 @@
     <source src="videos/oceans-clip.ogv" type='video/ogg; codecs="theora, vorbis"'>
 </video>
 <br>
-<button type="button" id="play">Play</button>
+<button type="button" id="playpause">Play</button>
 <button type="button" id="volup">+</button>
 <button type="button" id="voldown">-</button>
 </body>
