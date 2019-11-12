@@ -40,7 +40,7 @@
         <zutat>
             <ingredienz>Petersilie, Schnittlauch</ingredienz>
             <menge>1</menge>
-            <einheit>KL</einheit>
+            <einheit>TL</einheit>
         </zutat>
         <zutat>
             <ingredienz>Salz, Muskatnuss</ingredienz>
@@ -54,8 +54,7 @@
         </zutat>
     </zutaten>
     <zubereitung>
-        <schritt>Für die Tiroler Knödel Knödelbrot mit Milch und Eiern vermengen und 20-30 Minuten ziehen lassen.
-        </schritt>
+        <schritt>Semmelwürfel mit Milch und Eiern vermengen und 20 bis 30 Minuten ziehen lassen.</schritt>
         <schritt>Kleinwürfelig geschnittenen Speck und fein gewiegte Bergsteigerwurst in zerlassener Butter gemeinsam
             mit Zwiebeln, Petersilie und Schnittlauch anbraten und mit Salz und Muskatnuss abschmecken. Mehl darüber
             streuen und aus allen Zutaten eine feste, aber nicht zu feuchte Masse kneten.
