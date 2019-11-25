@@ -17,7 +17,7 @@
 
     function saySomething(message) {
         console.log(message);
-        document.write(message);
+        document.write("</p>" + message + "</p>");
     }
 
     saySomething("Hallo Du!");
@@ -25,10 +25,10 @@
     function saySomethingWithChange(message) {
         message += " So schauts aus.";
         console.log(message);
-        document.write(message);
+        document.write("</p>" + message + "</p>");
     }
 
-    let text = "Der Text bleibt.";
+    const text = "Der Text bleibt.";
     saySomethingWithChange(text);
     console.log(text);
 </script>

@@ -17,6 +17,13 @@
     document.write("<p>" + LIMIT + "</p>"); // 3600
     document.write("<p>" + DEFAULT_NAME + "</p>"); // John Doe
     document.write("<p>" + ALTER + "</p>"); // 19
+
+    // Aber vorsicht: const heißt nur, eine neue Zuweisung darf nicht passieren, die Daten dahinter können sich ändern.
+    // Das folgende Beispiel ist okay und erzeugt keinen Fehler
+    const myArray = [1, 2, 3];
+    document.write("<p>myArray vorher: " + myArray + "</p>"); // 1,2,3
+    myArray.push(4);
+    document.write("<p>myArray nachher: " + myArray + "</p>"); // 1,2,3,4
 </script>
 </body>
 </html>
