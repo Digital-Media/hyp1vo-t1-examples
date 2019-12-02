@@ -9,20 +9,20 @@
     "use strict";
 
     // Leeres Array
-    let a1 = new Array();
+    const a1 = new Array();
     console.log(a1);  // []
     // Array mit 3 Einträgen (3x undefined)
-    let a2 = new Array(3);
+    const a2 = new Array(3);
     console.log(a2); // [undefined, undefined, undefined]
     // Array mit den Einträgen 1 und 2
-    let a3 = new Array(1, 2);
+    const a3 = new Array(1, 2);
     console.log(a3); // [1, 2]
 
     // Wert 5 zu a1 hinzufügen
     a1.push(5);
     console.log(a1); // [5]
     // a1 und a3 zu a4 verknüpfen
-    let a4 = a1.concat(a3);
+    const a4 = a1.concat(a3);
     console.log(a4); // [5, 1, 2]
     // a4 sortieren
     a4.sort();

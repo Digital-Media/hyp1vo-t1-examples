@@ -9,13 +9,13 @@
     "use strict";
 
     // Number-Objekt mit Zahl anlegen (unüblich)
-    let number1 = new Number(12.3456);
-    let number1rounded = number1.toFixed(2);
+    const number1 = new Number(12.3456);
+    const number1rounded = number1.toFixed(2);
     console.log(number1rounded); // 12.35
 
     // Stattdessen: Implizite Konvertierung - Methoden direkt mit primitivem Datentyp nutzbar!
-    let number2 = 12.3456;
-    let number2rounded = number2.toFixed(2);
+    const number2 = 12.3456;
+    const number2rounded = number2.toFixed(2);
     console.log(number2rounded); // 12.35
 
     // Abfrage statische Eigenschaften

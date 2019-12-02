@@ -8,7 +8,7 @@
 <script>
     "use strict";
 
-    // Daten des/der Studierenden & Ausgabe bzw. Änderung der Daten definieren
+    // Daten des*der Studenten*Studentin & Ausgabe bzw. Änderung der Daten definieren
     class Student {
         constructor(name, age, program, languages) {
             this.name = name;
@@ -27,8 +27,8 @@
     }
 
     // Anlegen der Studierenden-Objekte
-    let student1 = new Student("John Doe", 22, "MTD", ["Java"]);
-    let student2 = new Student("Jane Doe", 25, "SE", ["Pascal", "C", "Java"]);
+    const student1 = new Student("John Doe", 22, "MTD", ["Java"]);
+    const student2 = new Student("Jane Doe", 25, "SE", ["Pascal", "C", "Java"]);
 
     // Aufrufe
     student1.showLanguages(); // Java

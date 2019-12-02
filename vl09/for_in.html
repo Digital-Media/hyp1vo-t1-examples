@@ -9,22 +9,22 @@
     "use strict";
 
     // for-in mit einem "klassischen" Objekt
-    let student = {
+    const student = {
         name: "John Doe",
         age: 22,
         program: "MTD",
         languages: ["Java"]
     };
 
-    for (let property in student) {
+    for (const property in student) {
         console.log("Eigenschaft: " + property);
         console.log("Wert: " + student[property]);
     }
 
     // for-in mit einem Array
-    /*let numbers = [1, 2, 3, 4, 5];
+    /*const numbers = [1, 2, 3, 4, 5];
 
-    for (let index in numbers) {
+    for (const index in numbers) {
         console.log("Eigenschaft: " + index);
         console.log("Wert: " + numbers[index]);
     }*/

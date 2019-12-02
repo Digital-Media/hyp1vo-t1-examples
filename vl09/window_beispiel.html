@@ -11,7 +11,7 @@
 <script>
     "use strict";
 
-    let myWindow;
+    let myWindow = null;
 
     function openWindow() {
         myWindow = window.open("window.html", "NewWindow", "width=300, height=200, scrollbars=yes");
@@ -19,10 +19,10 @@
     }
 
     function checkOpen() {
-        if (myWindow.closed) {
-            alert("Fenster wurde geschlossen!");
+        if (!myWindow || myWindow.closed) {
+            alert("Fenster ist geschlossen!");
         } else {
-            alert("Fenster ist noch offen!");
+            alert("Fenster ist offen!");
         }
     }
 </script>
