@@ -6,15 +6,20 @@
 </head>
 <body>
 <form action="mailto:me@example.com">
-    <input type="radio" name="favorit" value="HM1"><br>
-    <input type="radio" name="favorit" value="EPR1"><br>
-    <input type="radio" name="favorit" value="DMT1"><br>
+    <label for="hm1">Hypermedia 1</label>
+    <input type="radio" name="favorite" value="HM1" id="hm1"><br>
+    <label for="epr1">Einführung in die Programmierung 1</label>
+    <input type="radio" name="favorite" value="EPR1" id="epr1"><br>
+    <label for="dmt1">Digitale Medientechnik 1</label>
+    <input type="radio" name="favorite" value="DMT1" id="dmt1"><br>
     <button type="submit">Senden</button>
 </form>
 <script>
-    let pageTitle = document.title;
-    let body = document.body;
-    let favorit = document.getElementsByName("favorit"); // Alle Elemente mit dem name-Attribut favorit - hier Radio Buttons
+    "use strict";
+
+    const pageTitle = document.title;
+    const body = document.body;
+    const favorites = document.getElementsByName("favorite"); // Alle Elemente mit dem name-Attribut favorite - hier Radio Buttons
     document.open();
     document.write("<p>Hallo Welt!</p>");
     document.close();

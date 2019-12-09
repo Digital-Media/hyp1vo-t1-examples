@@ -7,17 +7,19 @@
 <body>
 <div><h1 id="title">Überschrift</h1><p>Hallo</p></div>
 <script>
-    // Variable theDiv enthält das <div>-Element aus dem Beispiel (also einen Knoten)
-    let theDiv = document.querySelector("div");
+    "use strict";
 
-    let name = theDiv.nodeName; // DIV
-    let type = theDiv.nodeType; // 1
-    let h1 = theDiv.firstChild; // <h1>-Element
-    let p = theDiv.lastChild; // <p>-Element
+    // Variable theDiv enthält das <div>-Element aus dem Beispiel (also einen Knoten)
+    const theDiv = document.querySelector("div");
+
+    const name = theDiv.nodeName; // DIV
+    const type = theDiv.nodeType; // 1
+    const h1 = theDiv.firstChild; // <h1>-Element
+    const p = theDiv.lastChild; // <p>-Element
 
     theDiv.replaceChild(p, h1); // ersetzt <h1> durch <p>, somit bleibt nur <p> übrig
     theDiv.removeChild(p); // löscht <p> als Kindknoten von <div>
-    let nodes = theDiv.hasChildNodes(); // false
+    const nodes = theDiv.hasChildNodes(); // false
 </script>
 </body>
 </html>

@@ -3,11 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Events verarbeiten &ndash; 3 Möglichkeiten</title>
-    <script>
-        function alertMe() {
-            alert("Event Handler aufgerufen!");
-        }
-    </script>
 </head>
 <body>
 <form action="mailto:me@email.com" method="post">
@@ -29,7 +24,13 @@
 </form>
 
 <script>
-    let btn2 = document.getElementById("button2");
+    "use strict";
+
+    function alertMe() {
+        alert("Event Handler/Listener aufgerufen!");
+    }
+
+    const btn2 = document.getElementById("button2");
     btn2.onclick = alertMe;
 
     // Mit anonymer Funktion, in der auch mehr als eine Funktion aufgerufen werden kann
@@ -38,7 +39,7 @@
         alertMe();
     };*/
 
-    let btn3 = document.getElementById("button3");
+    const btn3 = document.getElementById("button3");
     btn3.addEventListener("click", alertMe);
 </script>
 </body>

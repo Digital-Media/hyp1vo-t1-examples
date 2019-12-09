@@ -3,18 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Event-Handler &ndash; this</title>
-    <script>
-        function showURL(event) {
-            alert(this.href);
-            event.preventDefault();
-        }
-    </script>
 </head>
 <body>
 <a href="https://www.fh-ooe.at/">Ein Link</a>
-<a href="http://orf.at/">Noch ein Link</a>
+<a href="https://orf.at/">Noch ein Link</a>
+
 <script>
-    let links = document.getElementsByTagName("a");
+    "use strict";
+
+    function showURL(event) {
+        alert(this.href);
+        event.preventDefault();
+    }
+
+    const links = document.getElementsByTagName("a");
     links[0].addEventListener("click", showURL);
     links[1].addEventListener("click", showURL);
 </script>

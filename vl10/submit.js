@@ -1,3 +1,5 @@
+"use strict";
+
 // Merkt sich, ob Fehler aufgetreten sind
 let hasErrors = false;
 

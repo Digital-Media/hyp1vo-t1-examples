@@ -1,3 +1,5 @@
+"use strict";
+
 function valChange() {
     alert(this.options[this.selectedIndex].value + " wurde ausgewählt");
 }

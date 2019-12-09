@@ -1,10 +1,12 @@
+"use strict";
+
 function showURL(event) {
     alert(this.href);
     event.preventDefault();
 }
 
 function prepareListeners() {
-    let links = document.getElementsByTagName("a");
+    const links = document.getElementsByTagName("a");
     for (let i = 0; i < links.length; i++) {
         links[i].addEventListener("click", showURL);
     }

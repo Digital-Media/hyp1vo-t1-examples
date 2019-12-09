@@ -7,9 +7,11 @@
 <body>
 
 <script>
-    let divElem = document.createElement("div"); // Elementknoten erzeugen
+    "use strict";
+
+    const divElem = document.createElement("div"); // Elementknoten erzeugen
     divElem.textContent = "An ordinary div";
-    let titleAttr = document.createAttribute("title"); // Attributknoten erzeugen
+    const titleAttr = document.createAttribute("title"); // Attributknoten erzeugen
     titleAttr.value = "Some Container"; // Inhalt setzen
     divElem.setAttributeNode(titleAttr); // Attribut anhängen
     document.body.appendChild(divElem); // Element ins Dokument hängen

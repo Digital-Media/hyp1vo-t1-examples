@@ -16,7 +16,9 @@
 <body>
 
 <script>
-    let heading = document.createElement("h1"); // Elementknoten erzeugen
+    "use strict";
+
+    const heading = document.createElement("h1"); // Elementknoten erzeugen
     heading.textContent = "Überschrift"; // Text setzen
     heading.setAttribute("id", "important"); // setzt <h1> das id-Attribut mit dem Wert important
     heading.id = "normal"; // Ändert den Wert der wieder auf normal

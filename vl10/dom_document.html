@@ -18,13 +18,15 @@
     <p class="red underline">Red and Underlined</p>
 </div>
 <script>
-    let content = document.getElementById("content"); // Element mit ID content
-    let body = document.getElementsByTagName("body")[0]; // Liefert das (erste und einzige) <body>-Element
-    let redUnder = document.getElementsByClassName("red underline"); // Speichert alle Elemente mit den Klassen red und underline
-    let pInDiv = document.querySelector("div p"); // Erstes p-Element, das in einem div vorkommt
-    let newDiv = document.createElement("div");
-    let text = document.createTextNode("Hallo Welt!");
-    let idAttr = document.createAttribute("id");
+    "use strict";
+
+    const content = document.getElementById("content"); // Element mit ID content
+    const body = document.getElementsByTagName("body")[0]; // Liefert das (erste und einzige) <body>-Element
+    const redUnder = document.getElementsByClassName("red underline"); // Speichert alle Elemente mit den Klassen red und underline
+    const pInDiv = document.querySelector("div p"); // Erstes p-Element, das in einem div vorkommt
+    const newDiv = document.createElement("div");
+    const text = document.createTextNode("Hallo Welt!");
+    const idAttr = document.createAttribute("id");
 </script>
 </body>
 </html>
