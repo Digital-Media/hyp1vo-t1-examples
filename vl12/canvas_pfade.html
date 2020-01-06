@@ -3,25 +3,24 @@
 <head>
     <title>Canvas Pfade</title>
     <meta charset="utf-8">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let canvas = document.getElementById("draw");
-            let ctx = canvas.getContext("2d");
-            ctx.strokeStyle = "blue";
-            ctx.moveTo(20, 50);
-            ctx.lineTo(40, 20);
-            ctx.lineTo(60, 50);
-            ctx.moveTo(40, 20);
-            ctx.lineTo(40, 100);
-            ctx.stroke();
-            ctx.beginPath(); // Beginne neuen unabhängigen Pfad
-            ctx.fillStyle = "red";
-            ctx.arc(100, 50, 20, 0, 2 * Math.PI);
-            ctx.fill();
-        });
-    </script>
 </head>
 <body>
 <canvas width="640" height="480" id="draw">Ihr Browser unterstützt Canvas leider nicht!</canvas>
+
+<script>
+    const canvas = document.getElementById("draw");
+    const ctx = canvas.getContext("2d");
+    ctx.strokeStyle = "blue";
+    ctx.moveTo(20, 50);
+    ctx.lineTo(40, 20);
+    ctx.lineTo(60, 50);
+    ctx.moveTo(40, 20);
+    ctx.lineTo(40, 100);
+    ctx.stroke();
+    ctx.beginPath(); // Beginne neuen unabhängigen Pfad
+    ctx.fillStyle = "red";
+    ctx.arc(100, 50, 20, 0, 2 * Math.PI);
+    ctx.fill();
+</script>
 </body>
 </html>

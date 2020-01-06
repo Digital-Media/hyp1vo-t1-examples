@@ -3,31 +3,29 @@
 <head>
     <title>Modernizr Test</title>
     <meta charset="utf-8">
-    <script src="modernizr-custom.js"></script>
-    <script>
-        function printSupport(feature, support) {
-            let text = feature + ": ";
-            if (support) {
-                text += "Supported! :)";
-            }
-            else {
-                text += "Not supported! :(";
-            }
-            let li = document.createElement("li");
-            li.textContent = text;
-            document.getElementById("features").appendChild(li);
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            printSupport("Canvas", Modernizr.canvas);
-            printSupport("HTML5 Video", Modernizr.video);
-            printSupport("Geolocation", Modernizr.geolocation);
-            printSupport("Local Storage", Modernizr.localstorage);
-        });
-    </script>
 </head>
 <body>
 <h1>Supported Features</h1>
 <ul id="features"></ul>
+
+<script src="modernizr-custom.js"></script>
+<script>
+    function printSupport(feature, support) {
+        let text = feature + ": ";
+        if (support) {
+            text += "Supported! :)";
+        } else {
+            text += "Not supported! :(";
+        }
+        const li = document.createElement("li");
+        li.textContent = text;
+        document.getElementById("features").appendChild(li);
+    }
+
+    printSupport("Canvas", Modernizr.canvas);
+    printSupport("HTML5 Video", Modernizr.video);
+    printSupport("Geolocation", Modernizr.geolocation);
+    printSupport("Local Storage", Modernizr.localstorage);
+</script>
 </body>
 </html>

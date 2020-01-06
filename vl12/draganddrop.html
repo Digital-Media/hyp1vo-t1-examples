@@ -14,30 +14,6 @@
             float: left;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let dragImage = document.getElementById("dragimage");
-            let dropZones = document.getElementsByClassName("dropzone");
-
-            dragImage.addEventListener("dragstart", function (event) {
-                event.dataTransfer.setData("text", event.target.id);
-            });
-
-            for (let i = 0; i < dropZones.length; i++) {
-                dropZones[i].addEventListener("dragover", function (event) {
-                    event.preventDefault();
-                });
-
-                dropZones[i].addEventListener("drop", function (event) {
-                    event.preventDefault();
-                    let data = event.dataTransfer.getData("text");
-                    let draggedElement = document.getElementById(data);
-                    event.target.appendChild(draggedElement);
-                });
-            }
-
-        });
-    </script>
 </head>
 <body>
 <div class="dropzone">
@@ -47,5 +23,27 @@
 <div class="dropzone"></div>
 
 <div class="dropzone"></div>
+
+<script>
+    const dragImage = document.getElementById("dragimage");
+    const dropZones = document.getElementsByClassName("dropzone");
+
+    dragImage.addEventListener("dragstart", function (event) {
+        event.dataTransfer.setData("text", event.target.id);
+    });
+
+    for (let i = 0; i < dropZones.length; i++) {
+        dropZones[i].addEventListener("dragover", function (event) {
+            event.preventDefault();
+        });
+
+        dropZones[i].addEventListener("drop", function (event) {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("text");
+            const draggedElement = document.getElementById(data);
+            event.target.appendChild(draggedElement);
+        });
+    }
+</script>
 </body>
 </html>
