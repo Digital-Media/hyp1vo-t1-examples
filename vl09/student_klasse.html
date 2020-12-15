@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Studierende/r mit Klassendefinition</title>
+    <title>Studierende*r mit Klassendefinition</title>
 </head>
 <body>
 <script>
@@ -27,13 +27,13 @@
     }
 
     // Anlegen der Studierenden-Objekte
-    const student1 = new Student("John Doe", 22, "MTD", ["Java"]);
+    const student1 = new Student("John Doe", 22, "MTD", ["C"]);
     const student2 = new Student("Jane Doe", 25, "SE", ["Pascal", "C", "Java"]);
 
     // Aufrufe
-    student1.showLanguages(); // Java
+    student1.showLanguages(); // C
     student1.learnNewLanguage("JavaScript");
-    student1.showLanguages(); // Java,JavaScript
+    student1.showLanguages(); // C,JavaScript
     student2.showLanguages(); // Pascal,C,Java
 </script>
 </body>

@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Studierende/r mit Objekt-Literal-Syntax</title>
+    <title>Studierende*r mit Objekt-Literal-Syntax</title>
 </head>
 <body>
 <script>
@@ -13,7 +13,7 @@
         name: "John Doe",
         age: 22,
         program: "MTD",
-        languages: ["Java"],
+        languages: ["C"],
         showLanguages: function () {
             console.log(this.name + " (" + this.age + ", " + this.program + ") beherrscht diese Sprachen: " + this.languages);
         },
@@ -23,9 +23,9 @@
     };
 
     // Aufrufe
-    student.showLanguages(); // Java
+    student.showLanguages(); // C
     student.learnNewLanguage("JavaScript");
-    student.showLanguages(); // Java,JavaScript
+    student.showLanguages(); // C,JavaScript
 </script>
 </body>
 </html>
