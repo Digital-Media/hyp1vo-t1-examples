@@ -3,14 +3,6 @@
 <head>
     <title>Chaining</title>
     <meta charset="utf-8">
-    <script src="jquery-3.4.1.js"></script>
-    <script>
-        $(function () {
-            $("ul li").add("ol li").filter(".current").not(".hover").each(function () {
-                alert($(this).text());
-            });
-        });
-    </script>
 </head>
 <body>
 <ul>
@@ -23,5 +15,12 @@
     <li class="current hover">L2, E2</li>
     <li class="foo">L2, E3</li>
 </ol>
+
+<script src="jquery-3.5.1.js"></script>
+<script>
+    $("ul li").add("ol li").filter(".current").not(".hover").each(function () {
+        alert($(this).text());
+    });
+</script>
 </body>
 </html>

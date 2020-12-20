@@ -3,15 +3,6 @@
 <head>
     <title>Bind</title>
     <meta charset="utf-8">
-    <script src="jquery-3.4.1.js"></script>
-    <script>
-        $(function () {
-            $("a").on("click", function (event) {
-                alert($(this).attr("href"));
-                event.preventDefault();
-            });
-        });
-    </script>
 </head>
 <body>
 <div>
@@ -19,5 +10,13 @@
     <a href="seite2.html">Seite 2</a>
     <a href="seite3.html">Seite 3</a>
 </div>
+
+<script src="jquery-3.5.1.js"></script>
+<script>
+    $("a").on("click", function (event) {
+        alert($(this).attr("href"));
+        event.preventDefault();
+    });
+</script>
 </body>
 </html>
