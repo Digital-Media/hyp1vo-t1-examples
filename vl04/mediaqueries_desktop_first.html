@@ -5,19 +5,27 @@
     <title>Media Queries: Desktop first</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
         * {
             margin: 0;
             box-sizing: border-box;
         }
 
+        body {
+            color: #ECE9E6;
+            font-family: Raleway, Arial, sans-serif;
+            line-height: 2em;
+        }
+
         div#container {
             width: 960px;
             margin: 0 auto;
-            background-color: #33FFFF;
+            background-color: #FF8400;
         }
 
         header {
-            background-color: #00FF66;
+            background-color: #FA5E5E;
         }
 
         nav {
@@ -28,26 +36,27 @@
         main {
             width: 75%;
             float: right;
-            background-color: #66FFCC;
+            background-color: #E42A87;
         }
 
-        section#main {
+        section#content {
             width: 80%;
             float: left;
-            background-color: #BBBBBB;
+            background-color: #FFB600;
+            color: #434343;
         }
 
-        section#sidebar {
+        aside {
             width: 20%;
             float: right;
         }
 
         footer {
             clear: both;
-            background-color: #00CCFF;
+            background-color: #434343;
         }
 
-        header, nav, footer, section {
+        header, nav, footer, section, aside {
             padding: 0.5em;
         }
 
@@ -83,7 +92,7 @@
         }
 
         @media only screen and (max-width: 480px) {
-            section#main, section#sidebar, main {
+            section#content, aside, main {
                 float: none;
                 width: 100%;
             }
@@ -91,7 +100,7 @@
     </style>
 </head>
 <body>
-<div id="container">                    <!-- Äußerster Container z.B. für globale Hintergrundfarbe -->
+<div id="container">                    <!-- Äußerster zentrierter Container -->
     <header>                            <!-- Header-Bereich z.B. für Überschrift -->
         <h1>Überschrift</h1>
     </header>
@@ -102,19 +111,19 @@
         </ul>
     </nav>
     <main>                              <!-- Rechter Bereich z.B. für Inhalt/Fließtext -->
-        <section id="main">
+        <section id="content">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
                 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
                 ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
                 fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
                 vitae, justo.</p>
         </section>
-        <section id="sidebar">
+        <aside>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        </section>
+        </aside>
     </main>
     <footer>                            <!-- Footer-Bereich z.B. für Copyright-Info -->
-        <p>&copy; 2020 Der*Die Autor*in</p>
+        <p>&copy; 2021 Der*Die Autor*in</p>
     </footer>
 </div>
 </body>
