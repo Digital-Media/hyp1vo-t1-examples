@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Flexible Box Layout</title>
+    <title>Flexible Boxes Layout</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
         * {
             margin: 0;
+            box-sizing: border-box;
         }
 
         body {
-            background: gray;
-            font: 1.5rem Georgia, "Times New Roman", serif;
+            font-family: Raleway, Arial, sans-serif;
+            color: #ECE9E6;
+            line-height: 2rem;
+        }
+
+        div#container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #FF8400;
         }
 
         header {
             display: flex;
             align-items: center;
-        }
-
-        header, footer {
-            min-height: 6rem;
-            background: lightgreen;
+            background-color: #FA5E5E;
         }
 
         main {
-            min-height: 25rem;
             display: flex;
             flex-direction: row;
+            /* Zusätzliche Höhe wirkt sich auf alle Boxen aus */
+            min-height: 25rem;
         }
 
-        main > article {
-            background: lightcoral;
-            flex: 3 1 60%;
+        main > section {
+            flex: 3 1 62.5%;
             order: 2;
+            color: #434343;
+            background-color: #FFB600;
         }
 
         main > nav {
-            background: lightblue;
-            flex: 1 6 20%;
+            flex: 1 6 25%;
             order: 1;
+            background-color: #FF8400;
         }
 
         main > aside {
-            background: lightblue;
-            flex: 1 6 20%;
+            flex: 1 6 12.5%;
             order: 3;
+            background-color: #E42A87;
         }
 
         footer {
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
+            background-color: #434343;
         }
 
-        header, article, nav, aside, footer {
-            margin: 0.25em;
+        header, footer {
+            min-height: 6rem;
+        }
+
+        header, section, nav, aside, footer {
             padding: 0.5em;
+        }
+
+        /* Wenn schmäler als 960px -> volle Breite */
+        @media all and (max-width: 960px) {
+            div#container {
+                width: 100%;
+            }
         }
 
         /* Wenn schmäler als 640px -> untereinander */
@@ -65,40 +84,38 @@
                 flex-direction: column;
             }
 
-            main > article, main > nav, main > aside {
+            main > section, main > nav, main > aside {
                 /* Natürliche Ordnung der Elemente wiederherstellen */
                 order: 0;
-            }
-
-            main > article, main > nav, main > aside, header, footer {
-                min-height: 3.5rem;
             }
         }
     </style>
 </head>
 
 <body>
-<header>
-    <h1>Die Überschrift</h1>
-</header>
-<main>
-    <article>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-        takimata sanctus est Lorem ipsum dolor sit amet.
-    </article>
-    <nav>
-        <ul>
-            <li>Seite 1</li>
-            <li>Seite 2</li>
-        </ul>
-    </nav>
-    <aside>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua.
-    </aside>
-</main>
-<footer>&copy; 2020 &ndash; HM1-Vorlesung</footer>
+<div id="container">
+    <header>
+        <h1>Überschrift</h1>
+    </header>
+    <main>
+        <section id="content">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                vitae, justo.</p>
+        </section>
+        <nav>
+            <ul>
+                <li>Navigation 1</li>
+                <li>Navigation 2</li>
+            </ul>
+        </nav>
+        <aside>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </aside>
+    </main>
+    <footer>&copy; 2021 Der*Die Autor*in</footer>
+</div>
 </body>
 </html>

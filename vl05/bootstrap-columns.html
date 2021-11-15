@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Spalten</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .row {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .row > div:first-child {
+            background-color: #FFB600;
+        }
+
+        .row > div:last-child {
+            background-color: #FF8400;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-6">Spalte 1 XS</div>
+        <div class="col-6">Spalte 2 XS</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">Spalte 1 SM</div>
+        <div class="col-sm-6">Spalte 2 SM</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">Spalte 1 MD</div>
+        <div class="col-md-6">Spalte 2 MD</div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">Spalte 1 LG</div>
+        <div class="col-lg-6">Spalte 2 LG</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6">Spalte 1 XL</div>
+        <div class="col-xl-6">Spalte 2 XL</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xxl-6">Spalte 1 XXL</div>
+        <div class="col-xxl-6">Spalte 2 XXL</div>
+    </div>
+</div>
+</body>
+</html>

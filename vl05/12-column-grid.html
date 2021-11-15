@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12 Column Grid with Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .example .row div {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(39, 41, 43, 0.03);
+            border: 1px solid rgba(39, 41, 43, 0.1);
+        }
+
+        .example .row + .row {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<h1>12 Column Grid with Bootstrap</h1>
+<!-- Use an extension like
+https://chrome.google.com/webstore/detail/bootstrap-grid-overlay/mnlklmelflkheijccafopdohgclfefcg to overlay a grid -->
+<div class="container example">
+    <div class="row">
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+        <div class="col">1</div>
+    </div>
+    <div class="row">
+        <div class="col-12">12</div>
+    </div>
+    <div class="row">
+        <div class="col-1">1</div>
+        <div class="col-11">11</div>
+    </div>
+    <div class="row">
+        <div class="col-2">2</div>
+        <div class="col-10">10</div>
+    </div>
+    <div class="row">
+        <div class="col-3">3</div>
+        <div class="col-9">9</div>
+    </div>
+    <div class="row">
+        <div class="col-4">4</div>
+        <div class="col-8">8</div>
+    </div>
+    <div class="row">
+        <div class="col-5">5</div>
+        <div class="col-7">7</div>
+    </div>
+    <div class="row">
+        <div class="col-6">6</div>
+        <div class="col-6">6</div>
+    </div>
+    <div class="row">
+        <div class="col-4">4</div>
+    </div>
+    <div class="row">
+        <div class="col-4 offset-4">4</div>
+    </div>
+    <div class="row">
+        <div class="col-4 offset-8">4</div>
+    </div>
+</div>
+</body>
+</html>
