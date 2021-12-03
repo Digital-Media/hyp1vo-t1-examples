@@ -11,9 +11,12 @@
     function logData(first, last) {
         console.log("Vorname: " + first);
         console.log("Nachname: " + last);
+        document.write("</p>Vorname: " + first + "</p>");
+        document.write("</p>Nachname: " + last + "</p>");
         if (arguments.length > 2) {
             for (let i = 2; i < arguments.length; i++) {
                 console.log("Zusätzlich: " + arguments[i]);
+                document.write("</p>Zusätzlich: " + arguments[i] + "</p>");
             }
         }
     }
