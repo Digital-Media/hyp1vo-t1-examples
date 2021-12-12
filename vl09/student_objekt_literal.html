@@ -13,7 +13,7 @@
         name: "John Doe",
         age: 22,
         program: "MTD",
-        languages: ["C"],
+        languages: ["Java", "Python"],
         showLanguages: function () {
             console.log(this.name + " (" + this.age + ", " + this.program + ") beherrscht diese Sprachen: " + this.languages);
         },
@@ -23,9 +23,9 @@
     };
 
     // Aufrufe
-    student.showLanguages(); // C
+    student.showLanguages(); // Java,Python
     student.learnNewLanguage("JavaScript");
-    student.showLanguages(); // C,JavaScript
+    student.showLanguages(); // Java,Python,JavaScript
 </script>
 </body>
 </html>

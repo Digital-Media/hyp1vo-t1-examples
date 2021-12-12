@@ -27,13 +27,13 @@
     }
 
     // Anlegen der Studierenden-Objekte
-    const student1 = new Student("John Doe", 22, "MTD", ["C"]);
+    const student1 = new Student("John Doe", 22, "MTD", ["Java", "Python"]);
     const student2 = new Student("Jane Doe", 25, "SE", ["Pascal", "C", "Java"]);
 
     // Aufrufe
-    student1.showLanguages(); // C
+    student1.showLanguages(); // Java,Python
     student1.learnNewLanguage("JavaScript");
-    student1.showLanguages(); // C,JavaScript
+    student1.showLanguages(); // Java,Python,JavaScript
     student2.showLanguages(); // Pascal,C,Java
 </script>
 </body>
