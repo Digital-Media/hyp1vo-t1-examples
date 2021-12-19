@@ -16,10 +16,10 @@
     <li class="foo">L2, E3</li>
 </ol>
 
-<script src="jquery-3.5.1.js"></script>
+<script src="../vendor/jquery-3.6.0.js"></script>
 <script>
     $("ul li").add("ol li").filter(".current").not(".hover").each(function () {
-        alert($(this).text());
+        window.alert($(this).text());
     });
 </script>
 </body>

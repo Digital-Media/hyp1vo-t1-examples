@@ -1,7 +1,7 @@
 "use strict";
 
 function showURL(event) {
-    alert(this.href);
+    window.alert(this.href);
     event.preventDefault();
 }
 
@@ -13,12 +13,12 @@ function prepareListeners() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    alert("DOMContentLoaded-Event ausgelöst!");
+    window.alert("DOMContentLoaded-Event ausgelöst!");
     prepareListeners();
 });
 
 // Alternativ auch mit dem load-Event möglich:
 // window.addEventListener("load", function() {
-//   alert("load-Event ausgelöst!");
+//   window.alert("load-Event ausgelöst!");
 //   prepareListeners();
 // };

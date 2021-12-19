@@ -1,7 +1,7 @@
 "use strict";
 
 function showURL(event) {
-    alert(this.href);
+    window.alert(this.href);
     event.preventDefault();
 }
 
