@@ -1,7 +1,7 @@
 "use strict";
 
 function valChange() {
-    alert(this.options[this.selectedIndex].value + " wurde ausgewählt");
+    window.alert(this.options[this.selectedIndex].value + " wurde ausgewählt");
 }
 
 document.addEventListener("DOMContentLoaded", function () {
