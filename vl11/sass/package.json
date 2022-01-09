@@ -1,11 +1,16 @@
 {
-  "name": "hm1-sass-example",
+  "name": "hyp1_t1-sass-example",
   "version": "1.0.0",
-  "description": "",
-  "main": " ",
+  "description": "Example for using sass in your project",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "sass",
+    "example",
+    "Hypermedia"
+  ],
   "author": {
     "name": "Wolfgang Hochleitner",
     "email": "wolfgang.hochleitner@fh-hagenberg.at",
@@ -13,6 +18,6 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "sass": "^1.46.0"
   }
 }

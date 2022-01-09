@@ -2,7 +2,7 @@
 
 const {src, dest, watch, series, parallel} = require("gulp");
 const uglify = require("gulp-uglify-es").default;
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const cssnano = require("gulp-cssnano");
 const sourcemaps = require("gulp-sourcemaps");
 const eslint = require("gulp-eslint");
@@ -32,7 +32,7 @@ function lint() {
     return src("_js/**/*.js")
         .pipe(eslint())
         .pipe(eslint.format())
-        .pipe(eslint.failAfterError())
+        .pipe(eslint.failAfterError());
 }
 
 function server(done) {

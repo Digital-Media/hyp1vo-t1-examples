@@ -8,10 +8,8 @@ a:link, a:visited, a:hover, a:active {
 nav ul {
   list-style: none;
   padding: 0; }
-
 nav li {
   display: inline-block; }
-
 nav a {
   text-decoration: none; }
 
@@ -31,3 +29,5 @@ p {
 
 .error {
   border-color: red; }
+
+/*# sourceMappingURL=main.css.map */
