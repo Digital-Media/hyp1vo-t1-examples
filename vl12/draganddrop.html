@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="dropzone">
-    <img src="html5logo.png" id="dragimage" draggable="true">
+    <img src="html5logo.png" alt="HTML5 Logo" id="dragImage" draggable="true">
 </div>
 
 <div class="dropzone"></div>
@@ -25,7 +25,7 @@
 <div class="dropzone"></div>
 
 <script>
-    const dragImage = document.getElementById("dragimage");
+    const dragImage = document.getElementById("dragImage");
     const dropZones = document.getElementsByClassName("dropzone");
 
     dragImage.addEventListener("dragstart", function (event) {
