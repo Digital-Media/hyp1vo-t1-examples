@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Properties</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+        body {
+            --bg-color: #FFB600;
+            --text-color: #ECE9E6;
+            --margin: 10px;
+            --size: 200px;
+            font-family: Raleway, Arial, sans-serif;
+            color: var(--text-color);
+            display: flex;
+        }
+
+        div, p {
+            width: var(--size);
+            height: var(--size);
+            margin: var(--margin);
+            background-color: var(--bg-color, red);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            --bg-color: #FA5E5E;
+        }
+
+        p {
+            --text-color: #434343;
+            color: var(--text-color);
+        }
+
+    </style>
+</head>
+<body>
+<div>Element 1</div>
+<div>Element 2</div>
+<p>Element 3</p>
+</body>
+</html>

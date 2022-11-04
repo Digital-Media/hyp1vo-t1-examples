@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: Raleway, Arial, sans-serif;
+            color: #ECE9E6;
+            line-height: 2rem;
+        }
+
+        div#container {
+            display: grid;
+            max-width: 75rem;
+            margin: 0 auto;
+            grid-template-columns:
+                    [header-start nav-start footer-start] 1fr
+                    [nav-end main-start] 3fr
+                    [header-end main-end footer-end];
+            grid-template-rows:
+                    [row1-start] 6rem
+                    [row1-end row2-start]
+                    1fr [row2-end row3-start] 6rem
+                    [row3-end];
+            grid-template-areas: "header header" "nav main" "footer footer";
+            grid-gap: 0.5rem;
+        }
+
+        header {
+            grid-column: header-start / header-end;
+            grid-row: row1-start / row1-end;
+            grid-area: header;
+            background-color: #FA5E5E;
+        }
+
+        nav {
+            grid-column: nav-start / nav-end;
+            grid-row: row2-start / row2-end;
+            grid-area: nav;
+            background-color: #FF8400;
+        }
+
+        main {
+            grid-column: main-start / main-end;
+            grid-row: row2-start / row2-end;
+            grid-area: main;
+            color: #434343;
+            background-color: #FFB600;
+        }
+
+        footer {
+            grid-column: footer-start / footer-end;
+            grid-row: row3-start / row3-end;
+            grid-area: footer;
+            background-color: #434343;
+        }
+
+        header, nav, main, footer {
+            padding: 0.5rem;
+        }
+
+        @media all and (max-width: 640px) {
+            div#container {
+                grid-template-rows:
+                        [row1-start] 6rem
+                        [row1-end row2-start] auto
+                        [row2-end row3-start] auto
+                        [row3-end row4-start] 6rem
+                        [row4-end];
+            }
+
+            nav {
+                grid-column: nav-start / header-end;
+            }
+
+            main {
+                grid-column: header-start / main-end;
+                grid-row: row3-start / row3-end;
+            }
+
+            footer {
+                grid-row: row4-start / row4-end;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Überschrift</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Navigation 1</li>
+            <li>Navigation 2</li>
+        </ul>
+    </nav>
+    <main>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+        takimata sanctus est Lorem ipsum dolor sit amet.
+    </main>
+    <footer>&copy; 2022 Der*Die Autor*in</footer>
+</div>
+</body>

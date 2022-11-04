@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Spalten</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .row {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .row > div:first-child {
+            background-color: #FFB600;
+        }
+
+        .row > div:last-child {
+            background-color: #FF8400;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-6">Spalte 1 XS (&lt; 576px)</div>
+        <div class="col-6">Spalte 2 XS (&lt; 576px)</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">Spalte 1 SM (&ge; 576px)</div>
+        <div class="col-sm-6">Spalte 2 SM (&ge; 576px)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">Spalte 1 MD (&ge; 768px)</div>
+        <div class="col-md-6">Spalte 2 MD (&ge; 768px)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">Spalte 1 LG (&ge; 992px)</div>
+        <div class="col-lg-6">Spalte 2 LG (&ge; 992px)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6">Spalte 1 XL (&ge; 1200px)</div>
+        <div class="col-xl-6">Spalte 2 XL (&ge; 1200px)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xxl-6">Spalte 1 XXL (&ge; 1400px)</div>
+        <div class="col-xxl-6">Spalte 2 XXL (&ge; 1400px)</div>
+    </div>
+</div>
+</body>
+</html>
