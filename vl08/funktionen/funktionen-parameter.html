@@ -9,16 +9,20 @@
     "use strict";
 
     function logData(first, last) {
+        console.log("Anzahl der Argumente: " + arguments.length);
         console.log("Vorname: " + first);
         console.log("Nachname: " + last);
-        document.write("</p>Vorname: " + first + "</p>");
-        document.write("</p>Nachname: " + last + "</p>");
+        document.write("<ul>");
+        document.write("<li>Anzahl der Argumente: " + arguments.length + "</li>");
+        document.write("<li>Vorname: " + first + "</li>");
+        document.write("<li>Nachname: " + last + "</li>");
         if (arguments.length > 2) {
             for (let i = 2; i < arguments.length; i++) {
                 console.log("Zusätzlich: " + arguments[i]);
-                document.write("</p>Zusätzlich: " + arguments[i] + "</p>");
+                document.write("<li>Zusätzlich: " + arguments[i] + "</li>");
             }
         }
+        document.write("</ul>");
     }
 
     logData("John", "Doe"); // Vorname: John, Nachname: Doe
