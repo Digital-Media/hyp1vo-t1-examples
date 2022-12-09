@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Bind</title>
+    <title>jQuery On</title>
     <meta charset="utf-8">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <a href="seite3.html">Seite 3</a>
 </div>
 
-<script src="../vendor/jquery-3.6.0.js"></script>
+<script src="../vendor/jquery-3.6.1.js"></script>
 <script>
     $("a").on("click", function (event) {
         window.alert($(this).attr("href"));

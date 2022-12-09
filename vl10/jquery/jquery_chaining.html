@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Chaining</title>
+    <title>jQuery Chaining</title>
     <meta charset="utf-8">
 </head>
 <body>
@@ -16,7 +16,7 @@
     <li class="foo">L2, E3</li>
 </ol>
 
-<script src="../vendor/jquery-3.6.0.js"></script>
+<script src="../vendor/jquery-3.6.1.js"></script>
 <script>
     $("ul li").add("ol li").filter(".current").not(".hover").each(function () {
         window.alert($(this).text());
