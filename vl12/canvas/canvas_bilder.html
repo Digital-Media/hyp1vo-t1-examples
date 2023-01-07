@@ -11,7 +11,7 @@
 </head>
 <body>
 <div>
-    <img src="html5logo.png" alt="HTML5 Logo" id="image">
+    <img src="../assets/html5logo.png" alt="HTML5 Logo" id="image">
 </div>
 <canvas width="640" height="480" id="draw">Ihr Browser unterstützt Canvas leider nicht!</canvas>
 
@@ -23,7 +23,7 @@
         const img = document.getElementById("image");
         ctx.drawImage(img, 20, 20);
         const jsImg = new Image();
-        jsImg.src = "html5logo.png";
+        jsImg.src = "../assets/html5logo.png";
         jsImg.addEventListener("load", function () {
             ctx.drawImage(jsImg, 0, 24, 92, 104, 150, 60, 46, 52);
         });
