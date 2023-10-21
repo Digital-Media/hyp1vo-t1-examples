@@ -7,6 +7,7 @@
         div {
             width: 100px;
             height: 100px;
+            float: left; /* nebeneinander platzieren */
         }
 
         #one {
@@ -20,11 +21,16 @@
         }
 
         #three {
-            overflow: scroll;
-            background-color: yellow;
+            overflow: clip;
+            overflow-clip-margin: 15px;
+            background-color: lightblue;
         }
 
         #four {
+            overflow: scroll;
+            background-color: yellow;
+        }
+        #five {
             overflow: auto;
             background-color: cyan;
         }
@@ -35,5 +41,6 @@
 <div id="two">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
 <div id="three">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
 <div id="four">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
+<div id="five">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</div>
 </body>
 </html>
