@@ -10,14 +10,14 @@
 <script>
     "use strict";
 
-    // Leeres Array
+    // Leeres Array (besser mit [] initialisieren, hier nur als Demonstration)
     const a1 = new Array();
     console.log(a1);  // []
-    // Array mit 3 Einträgen (3x undefined)
+    // Array mit 3 Einträgen (3x undefined, geht nur mit new Array())
     const a2 = new Array(3);
     console.log(a2); // [undefined, undefined, undefined]
-    // Array mit den Einträgen 1 und 2
-    const a3 = new Array(1, 2);
+    // Array mit den Einträgen 1 und 2 (als Array Literal)
+    const a3 = [1, 2];
     console.log(a3); // [1, 2]
 
     // Wert 5 zu a1 hinzufügen
