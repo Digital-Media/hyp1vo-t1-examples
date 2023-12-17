@@ -1,1 +1,1 @@
-"use strict";document.addEventListener("DOMContentLoaded",(function(){const t=document.createElement("p");t.textContent="Hier ist etwas Text",document.body.appendChild(t)}));
+"use strict";document.addEventListener("DOMContentLoaded",(function(){const e=document.createElement("p");e.textContent="Here is some generated text.",document.body.appendChild(e)}));

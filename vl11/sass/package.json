@@ -1,23 +1,19 @@
 {
   "name": "hyp1_t1-sass-example",
   "version": "1.0.0",
-  "description": "Example for using sass in your project",
-  "main": "",
+  "description": "Example for using Sass in your project",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "sass",
     "example",
-    "Hypermedia"
+    "project"
   ],
-  "author": {
-    "name": "Wolfgang Hochleitner",
-    "email": "wolfgang.hochleitner@fh-hagenberg.at",
-    "url": "https://about.me/wolfgang.hochleitner"
-  },
+  "author": "Wolfgang Hochleitner",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.57.0"
+  "dependencies": {
+    "sass": "^1.69.5"
   }
 }
