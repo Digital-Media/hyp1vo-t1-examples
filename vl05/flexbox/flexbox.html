@@ -16,10 +16,11 @@
             font-family: Raleway, Arial, sans-serif;
             color: rgb(236 233 230);
             line-height: 2rem;
+            hyphens: auto; /* Silbentrennung */
         }
 
         div#container {
-            max-width: 960px;
+            width: 960px;
             margin: 0 auto;
             background-color: rgb(255 132 0);
         }
@@ -38,20 +39,20 @@
         }
 
         main > section {
-            flex: 3 1 62.5%;
+            flex: 2 2 600px; /* 62,5 % von 960px */
             order: 2;
             color: rgb(67 67 67);
             background-color: rgb(255 182 0);
         }
 
         main > nav {
-            flex: 1 6 25%;
+            flex: 1 1 240px; /* 25 % von 960px */
             order: 1;
             background-color: rgb(255 132 0);
         }
 
         main > aside {
-            flex: 1 6 12.5%;
+            flex: 1 1 120px; /* 12,5 % von 960px */
             order: 3;
             background-color: rgb(228 42 135);
         }
@@ -71,7 +72,14 @@
             padding: 0.5em;
         }
 
-        /* Wenn schmäler als 960px -> volle Breite */
+        /* Ab 1200px -> Container auf 1200px (für flex-grow) */
+        @media all and (min-width: 1200px) {
+            div#container {
+                width: 1200px;
+            }
+        }
+
+        /* Wenn schmäler als 960px -> volle Breite (für flex-shrink) */
         @media all and (max-width: 960px) {
             div#container {
                 width: 100%;
@@ -87,6 +95,7 @@
             main > section, main > nav, main > aside {
                 /* Natürliche Ordnung der Elemente wiederherstellen */
                 order: 0;
+                flex-basis: auto;
             }
         }
     </style>
@@ -115,7 +124,7 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         </aside>
     </main>
-    <footer>&copy; 2023 Der*Die Autor*in</footer>
+    <footer>&copy; 2024 Der*Die Autor*in</footer>
 </div>
 </body>
 </html>
