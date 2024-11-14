@@ -4,7 +4,7 @@
     <gericht>Der klassische Tiroler Knödel</gericht>
     <zutaten>
         <zutat>
-            <ingredienz>Knödelbrot</ingredienz>
+            <ingredienz>Semmelwürfel</ingredienz>
             <menge>350</menge>
             <einheit>g</einheit>
         </zutat>
@@ -39,18 +39,28 @@
             <einheit>Stück</einheit>
         </zutat>
         <zutat>
-            <ingredienz>Petersilie, Schnittlauch</ingredienz>
-            <menge>1</menge>
-            <einheit>TL</einheit>
+            <ingredienz>Petersilie</ingredienz>
+            <menge>10</menge>
+            <einheit>g</einheit>
         </zutat>
         <zutat>
-            <ingredienz>Salz, Muskatnuss</ingredienz>
+            <ingredienz>Salz</ingredienz>
+            <menge>1</menge>
+            <einheit>Prise</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Muskatnuss</ingredienz>
             <menge>1</menge>
             <einheit>Prise</einheit>
         </zutat>
         <zutat>
             <ingredienz>Mehl</ingredienz>
             <menge>80</menge>
+            <einheit>g</einheit>
+        </zutat>
+        <zutat>
+            <ingredienz>Schnittlauch</ingredienz>
+            <menge>10</menge>
             <einheit>g</einheit>
         </zutat>
     </zutaten>
@@ -60,9 +70,11 @@
             mit Zwiebeln, Petersilie und Schnittlauch anbraten und mit Salz und Muskatnuss abschmecken. Mehl darüber
             streuen und aus allen Zutaten eine feste, aber nicht zu feuchte Masse kneten.
         </schritt>
-        <schritt>Mit befeuchteten Händen daraus Knödel formen. Einen davon als "Probeknödel" in Salzwasser knappe 15
-            Minuten kochen. Hat der Probeknödel eine zu weiche Konsistenz, muss man noch etwas Mehl unter die
-            Knödelmasse kneten. Erst wenn die Masse kompakt genug ist, kocht man die restlichen Tiroler Knödel.
+        <schritt>Mit befeuchteten Händen daraus Knödel formen.</schritt>
+        <schritt>Einen davon als Probeknödel in Salzwasser knappe 15 Minuten kochen. Hat der Probeknödel eine zu weiche
+            Konsistenz, muss man noch etwas Mehl unter die Knödelmasse kneten.
         </schritt>
+        <schritt>Erst wenn die Masse kompakt genug ist, kocht man die restlichen Knödel.</schritt>
+        <schritt>Tiroler Knödel mit Schnittlauch bestreut servieren.</schritt>
     </zubereitung>
 </rezept>

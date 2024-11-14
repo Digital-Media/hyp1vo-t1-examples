@@ -4,7 +4,7 @@
 gericht: Der klassische Tiroler Knödel
 quelle: https://www.ichkoche.at/der-klassische-tiroler-knoedel-rezept-4386
 zutaten:
-  - ingredienz: Knödelbrot
+  - ingredienz: Semmelwürfel
     menge: 350
     einheit: g
   - ingredienz: Milch
@@ -25,26 +25,34 @@ zutaten:
   - ingredienz: Zwiebel
     menge: 1
     einheit: Stück
-  - ingredienz: Petersilie, Schnittlauch
+  - ingredienz: Petersilie
+    menge: 10
+    einheit: g
+  - ingredienz: Salz
     menge: 1
-    einheit: TL
-  - ingredienz: Salz, Muskatnuss
+    einheit: Prise
+  - ingredienz: Muskatnuss
     menge: 1
     einheit: Prise
   - ingredienz: Mehl
     menge: 80
     einheit: g
+  - ingredienz: Schnittlauch
+    menge: 10
+    einheit: g
 zubereitung:
   - >
-    Semmelwürfel mit Milch und Eiern vermengen und 20 bis 30 Minuten ziehen
-    lassen.
+    Semmelwürfel mit Milch und Eiern vermengen und 20 bis 30 Minuten ziehen lassen.
   - >
-    Kleinwürfelig geschnittenen Speck und fein gewiegte Bergsteigerwurst in
-    zerlassener Butter gemeinsam mit Zwiebeln, Petersilie und Schnittlauch
-    anbraten und mit Salz und Muskatnuss abschmecken. Mehl darüber streuen und
-    aus allen Zutaten eine feste, aber nicht zu feuchte Masse kneten.
+    Kleinwürfelig geschnittenen Speck und fein gewiegte Bergsteigerwurst in zerlassener Butter gemeinsam mit Zwiebeln,
+    Petersilie und Schnittlauch anbraten und mit Salz und Muskatnuss abschmecken. Mehl darüber streuen und aus allen
+    Zutaten eine feste, aber nicht zu feuchte Masse kneten.
   - >
-    Mit befeuchteten Händen daraus Knödel formen. Einen davon als "Probeknödel"
-    in Salzwasser knappe 15 Minuten kochen. Hat der Probeknödel eine zu weiche
-    Konsistenz, muss man noch etwas Mehl unter die Knödelmasse kneten. Erst wenn
-    die Masse kompakt genug ist, kocht man die restlichen Tiroler Knödel.
+    Mit befeuchteten Händen daraus Knödel formen.
+  - >
+    Einen davon als Probeknödel in Salzwasser knappe 15 Minuten kochen. Hat der Probeknödel eine zu weiche Konsistenz,
+    muss man noch etwas Mehl unter die Knödelmasse kneten.
+  - >
+    Erst wenn die Masse kompakt genug ist, kocht man die restlichen Knödel.
+  - >
+    Tiroler Knödel mit Schnittlauch bestreut servieren.
