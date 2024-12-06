@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Node: Eigenschaften und Methoden</title>
@@ -12,11 +12,13 @@
     // Variable theDiv enthält das <div>-Element aus dem Beispiel (also einen Knoten)
     const theDiv = document.querySelector("div");
 
+    // Eigenschaften werden abgefragt und in Variablen gespeichert
     const name = theDiv.nodeName; // DIV
     const type = theDiv.nodeType; // 1
     const h1 = theDiv.firstChild; // <h1>-Element
     const p = theDiv.lastChild; // <p>-Element
 
+    // Methoden werden auf Knoten ausgeführt
     theDiv.replaceChild(p, h1); // ersetzt <h1> durch <p>, somit bleibt nur <p> übrig
     theDiv.removeChild(p); // löscht <p> als Kindknoten von <div>
     const nodes = theDiv.hasChildNodes(); // false

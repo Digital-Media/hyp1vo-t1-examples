@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Document: Eigenschaften und Methoden</title>
@@ -20,6 +20,10 @@
 <script>
     "use strict";
 
+    // Eigenschaften des Dokuments in die Konsole ausgeben.
+    console.log(document.URL, document.characterSet, document.contentType, document.compatMode);
+
+    // Methoden fragen Elemente aus dem Dokument ab und speichern das Ergebnis in Variablen
     const content = document.getElementById("content"); // Element mit ID content
     const body = document.getElementsByTagName("body")[0]; // Liefert das (erste und einzige) <body>-Element
     const redUnder = document.getElementsByClassName("red underline"); // Speichert alle Elemente mit den Klassen red und underline

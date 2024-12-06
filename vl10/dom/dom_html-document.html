@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>HTMLDocument: Eigenschaften und Methoden</title>
@@ -17,8 +17,11 @@
 <script>
     "use strict";
 
-    const pageTitle = document.title;
-    const body = document.body;
+    // Eigenschaften werden ausgelesen und in Variablen gespeichert
+    const pageTitle = document.title; // Der Inhalt des <title>-Elements
+    const body = document.body; // Das <body>-Element
+
+    // Mit den Methoden werden Elemente abgefragt und ein neues Dokument erstellt und beschrieben
     const favorites = document.getElementsByName("favorite"); // Alle Elemente mit dem name-Attribut favorite - hier Radio Buttons
     document.open();
     document.write("<p>Hallo Welt!</p>");
