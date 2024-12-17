@@ -14,6 +14,6 @@
   "author": "Wolfgang Hochleitner",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.69.5"
+    "sass": "^1.83.0"
   }
 }

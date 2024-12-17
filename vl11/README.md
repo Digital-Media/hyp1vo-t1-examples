@@ -2,10 +2,10 @@
 
 Für alle Beispiele muss eine aktuelle Node.js Version (https://nodejs.org/) installiert sein.
 
-## nodesever.js
+## nodeserver.mjs
 
 1. Commandline/Terminal öffnen.
-2. `node nodeserver.js`.
+2. `node nodeserver.mjs`.
 3. Auf http://localhost:3000/ im Browser wechseln.
 
 ## gulp
@@ -17,7 +17,7 @@ Für alle Beispiele muss eine aktuelle Node.js Version (https://nodejs.org/) ins
 
 ## sass
 
-1. node-sass global installieren: `npm install -g node-sass`.
+1. node-sass global installieren: `npm install -g sass`.
 2. Commandline/Terminal öffnen.
-3. SCSS-Datei zu CSS-Datei konvertieren: `node-sass _scss\main.scc css\main.css`.
+3. SCSS-Datei zu CSS-Datei konvertieren: `sass _scss\main.scc css\main.css`.
 4. Nach jeder Änderung in der SCSS-Datei muss dieser Aufruf erneut durchgeführt werden.

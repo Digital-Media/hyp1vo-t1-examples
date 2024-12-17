@@ -2,7 +2,8 @@
   "name": "hyp1_t1-gulp-example",
   "version": "1.0.0",
   "description": "Example for using gulp tasks in your project",
-  "main": "Gulpfile.js",
+  "type": "module",
+  "main": "gulpfile.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,16 +19,13 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
-    "gulp": "^4.0.2",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-eslint": "^6.0.0",
-    "gulp-sass": "^5.1.0",
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-eslint-new": "^2.4.0",
+    "gulp-sass": "^6.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify-es": "^3.0.0",
-    "sass": "^1.69.5"
-  },
-  "overrides": {
-    "chokidar": "3.5.3"
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.83.0"
   }
 }
